@@ -122,4 +122,12 @@ day02
     - 목록상자
     - 하위태그
         <option> 항목 </option>
+
+15. <hr/>
+    - 가로선
+
+16. <fieldset>
+    - 필드 구역 만들기
+    - 필드 제목
+        <legend> 필드 이름 </legend>
         
