@@ -50,3 +50,76 @@
             <td rowspan="2">
 9. <address>
     - 주소 마크업
+
+
+day02
+
+10. <audio src="오디오.mp3"></audio>
+
+11. <video src="동영상.mp4"></video>                 : 컨트롤러 표시 안됨 [ 실행버튼 안보임]
+    <video src="동영상.mp4" controls>                : 컨트롤러 표시 [ controls 속성]
+    <video src="동영상.mp4" controls autoplay>       : 자동실행 [ 브라우저 정책 상 금지 ] =>JS 이용해서 강제 자동실행 가능
+    <video src="동영상.mp4" controls autoplay muted> : 소리없이 자동실행
+12. <input />
+    - <form> 태그 안에서 사용
+    - 주요속성
+        1. type
+            type="text"     : [기본값] 텍스트**
+            type="password" : 패스워드**
+            type="email"    : 이메일 형식 [@필수입력]
+            type="color"    : 색상
+            type="date"     : 날짜
+            type="datetime-local"   :날짜/시간 
+            type="month"    : 날짜[월]
+            type="time"     : 시간
+            type="week"     : 주
+            type="range"    : 범위[스크롤]
+            type="number"   : 숫자
+            type="file"     :첨부파일**
+
+            type="radio"    : [단일선택 - name 속성 동일]
+            type="checkboc" : [복수선택 - name 속성 동일]
+
+            type="button"   : 버튼 [*추후에 JS와 같이 사용할 예정]
+            type="submit"   : form[폼] 전송 [*추후에 JAVA서버에게 전송 할예정]
+            type="reset"    : form[폼] 입력 초기화
+
+        2. name
+            - 태그의 이름을 넣어서 식별하는 역할 [사람이름]
+                <남자이름="유재석" />
+
+        3. value
+            - 초기값 넣어주기
+        
+        4. placeholder
+            - 가이드 라인
+
+        5. redolny
+            -수정불가[읽기모드]
+
+        6. disabled
+            - 사용불가
+        
+        7. autofocus
+            - 포커스[커서이동]
+
+        8. minlength, maxlength
+            - 값은 최소길이, 최대길이
+
+        9. multiple
+            - [type='file'] 일때 여러개 첨부
+
+        10. checked
+            - [type='radio'] 일때 체크상태
+            - [type='checkbos'] 일때 체크상태
+
+13. <textarea>
+    - 긴글 텍스트- 속성
+        rows="행 텍스트 개수"
+        cols="열 텍스트 개수"
+
+14. <select>
+    - 목록상자
+    - 하위태그
+        <option> 항목 </option>
+        
