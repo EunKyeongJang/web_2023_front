@@ -1,0 +1,42 @@
+<!-- 주석 : 코드 설명 작성할때 -->
+<!-- 
+    vscode 에디터 자동완성 : ctrl+스페이스바
+        - 코드 추천
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+    <title> 페이지 제목 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!-- 반응형 결정 -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'> <!-- CSS파일 불러오기 -->
+    <script src='main.js'></script> <!-- JS파일 불러오기 -->
+</head>
+<body>
+    <!-- 
+        상대경로 : 현재 파일 기준으로 부터 불러올 파일의 위치
+            ../ : 상위 폴더로 이동
+            ./ 또는 생략 : 현재 위치
+            ../폴더명/파일 : 상위폴더로 이동 후 해당 폴더 안에 있는파일 위치
+        절대경로
+            C:\Users\504\Desktop\web_2023_front\day01\capyzou.png
+
+        -- 에디터가 지원
+     -->
+    <!-- 1. 이미지 출력 -->    
+    <img src="../capyzou.png" /> <!-- 상위폴더 내 파일 -->
+    <img src="../day01/capyzou.png" /> <!-- 상위폴더 내 폴더 안에있는 파일 -->
+
+     <!-- 2. 음성파일 출력 -->
+     <audio src="오디오.mp3" controls autoplay muted></audio>
+
+     <!-- 3. 영상파일 출력 -->
+     <video src="동영상.mp4" controls autoplay muted></video>
+
+     <!-- 4. 멀티미디어파일 출력 -->
+     <iframe></iframe>
+
+</body>
+</html>
