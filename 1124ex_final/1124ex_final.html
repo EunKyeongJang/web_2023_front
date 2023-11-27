@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>웹 설문지 만들기</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='ex3.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form>
+        <!--처음부분-->
+        <div class="head">
+            <img src="sim.png" alt="마음공감 로고" width="150px" height="100px">
+            <h3>송혜은민 심리상담센터 설문지</h3>
+        </div>
+        <div class="introduction">
+            <!--<h4>심리상담검사지</h4>-->
+            <table width="100%" height="300px">
+                <colgroup>
+                    <col style="width:14%">
+                    <col style="width:60%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="first">이름</th>
+                        <td class="first">
+                        <input type="text" title="이름" placeholder="성함을 입력해주세요." width="170px">
+                    </tr>
+                    <tr>
+                        <th>성별</th>
+                        <td>
+                            <input type="radio" name="성별"/> 남성
+                            <input type="radio" name="성별"/> 여성
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>생년월일</th>
+                        <td>
+                            <select class="select1" name="area" id="area" title="지역1선택" style="width:60px">
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2077">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                            </select>
+                            년
+                            <select class="select1" name="area" id="area" title="지역1선택" style="width:60px">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            월
+                            <select class="select1" name="area" id="area" title="지역1선택" style="width:60px">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            일
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>
+                            <input type="text" size="4" maxlength="3" required>&nbsp;-
+                            <input type="text" size="4" maxlength="4" style="margin:0;" required>&nbsp;-
+                            <input type="text" size="4" maxlength="4" 
+                            style="margin:0;" required>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="box">
+            <!--중간부분-->
+            <div class="middlebox">
+                <table style=border-collapse:collapse;">
+                    <thead>
+                        <tr>
+                            <th colspan="5" rowspan="2">설문내용</th>
+                            <th width="160px">매우 그렇다</th>
+                            <th width="160px">그렇다</th>
+                            <th width="160px">보통</th>
+                            <th width="160px">그렇지않다</th>
+                            <th width="160px">매우 그렇지않다</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <label>
+                        <tr>
+                            <td colspan="5">사람과 함께있는것을 선호하는 편이다.</td>
+                            <td><input type="radio" name="질문1"/></td>
+                            <td><input type="radio" name="질문1"/></td>
+                            <td><input type="radio" name="질문1"/></td>
+                            <td><input type="radio" name="질문1"/></td>
+                            <td><input type="radio" name="질문1"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">친구들에게 먼저 연락하는 편이다.</td>
+                            <td><input type="radio" name="질문2"/></td>
+                            <td><input type="radio" name="질문2"/></td>
+                            <td><input type="radio" name="질문2"/></td>
+                            <td><input type="radio" name="질문2"/></td>
+                            <td><input type="radio" name="질문2"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">기한을 잘 지키는 편이다.</td>
+                            <td><input type="radio" name="질문3"/></td>
+                            <td><input type="radio" name="질문3"/></td>
+                            <td><input type="radio" name="질문3"/></td>
+                            <td><input type="radio" name="질문3"/></td>
+                            <td><input type="radio" name="질문3"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">빠른 결과를 얻길 원한다.</td>
+                            <td><input type="radio" name="질문4"/></td>
+                            <td><input type="radio" name="질문4"/></td>
+                            <td><input type="radio" name="질문4"/></td>
+                            <td><input type="radio" name="질문4"/></td>
+                            <td><input type="radio" name="질문4"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">나는 무시할 수 없는 영향력을 가진 사람이다.</td>
+                            <td><input type="radio" name="질문5"/></td>
+                            <td><input type="radio" name="질문5"/></td>
+                            <td><input type="radio" name="질문5"/></td>
+                            <td><input type="radio" name="질문5"/></td>
+                            <td><input type="radio" name="질문5"/></td>
+                        </tr>
+                    </label>
+                    </tbody>
+                </table>
+            </div>
+             <!--마지막 부분-->
+            <div class="lastbox">
+                <div class="gun">
+                    <p>건의사항</p>
+                    <textarea class="textbox" rows="10" cols="60"></textarea>
+                </div>
+                <div class="time">
+                    <p>
+                        작성날짜 :
+                        <input type="date">
+                    </p>
+                    <p>
+                        작성시간 :
+                        <input type="time">
+                    </p>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="제출하기"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
