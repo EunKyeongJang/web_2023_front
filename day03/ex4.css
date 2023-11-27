@@ -1,0 +1,18 @@
+.pin{
+    width: 400px;
+}
+
+.total{
+    width: 400px;
+    margin: 0 auto ;
+    border: 1px solid gainsboro;
+}
+.con0{
+    padding: 10px 15px 8px 15px;
+    border-top: 1px solid gainsboro;
+}
+
+#tcolor{
+    font-weight: bold;
+    color: orange;
+}

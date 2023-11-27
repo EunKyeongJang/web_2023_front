@@ -1,0 +1,106 @@
+/* 
+    어디에{ 무엇을 : 어떻게; 무엇을 : 어떻게; }
+    1. 어디의 [ 선택자 ]
+        1. * 2. 마크업 3. .class 4. #id
+*/
+
+.box1{border : 1px solid red;}
+            /* 두께 선종류 색상 */
+
+.box2{border-top : 1px solid blue;
+      border-right: dotted 2px orange;
+      border-bottom: double 3px red;
+      border-left: dashed 4px black;}
+
+
+.box3{border: solid 2px red;
+      border-radius: 10px;       /* 둥근 모서리 */
+    }
+
+.box4{border : solid 1px blue;
+      padding : 10px;             /* 안쪽 여백 */
+      margin: 20px;               /* 바깥 여백 */
+    }
+
+.box5{border: solid 1px pink;
+      padding-top : 20px;       /* 위 안쪽 여백 */
+      padding-right: 30px;      /* 오른쪽 안쪽 여백 */
+      padding-bottom: 40px;     /* 아래쪽 안쪽 여백 */
+      padding-left: 50px;       /* 왼쪽 안쪽 여백 */
+
+      margin-top: 50px;         /* 위 바깥여백 */
+      margin-right: 60px;       /* 오른쪽 바깥여백 */
+      margin-bottom: 70px;      /* 아래 바깥여백 */
+      margin-left: 80PX;        /* 왼쪽 바깥여백 */
+    }         
+
+.box6{border: solid 1px black;
+      
+      padding: 10px 20px 30px 40px;
+      /* 위 오른쪽 아래쪽 왼쪽의 안쪽여백 */
+      padding: 10px 20px;
+      /* 위+아래 왼쪽+오른쪽 의 안쪽여백 */
+      padding: 10px;
+      /* 위+오른쪽+아래쪽+왼쪽 의 안쪽여백 */
+
+      margin: 10px 20px 30px 40px;
+      /* 위 오른쪽 아래쪽 왼쪽 의 바깥여백 */
+      margin: 10px 20px;
+      /* 위+아래 왼쪽+오른쪽 의 바깥여백 */
+      margin: 10px;
+      /* 위+오른쪽+아래쪽+왼쪽 의 바깥여백 */
+    }
+
+.box7{width: 200px;     /* 가로 사이즈 */
+      height: 300px;    /* 세로 사이즈 */
+      border: solid 1px red;
+      box-sizing: content-box;  /* border, padding 을 사이즈에 포함X */
+      /* box-sizing: border-box;   border, padding 을 사이즈에 포함O - 직관적으로 볼 수 있어 일반적으로 사용함*/
+      padding: 20px;
+      border: solid 10px red;
+
+      /* 내용(content) 가운데 정렬 */
+      text-align: center;
+      /* 박스 가운데 정렬 */
+      margin: 0 auto;   /* 가로 가운데 정렬 */
+}
+      
+div{
+    border: solid 1px red;
+    margin: 20px;
+    background-color: blanchedalmond;
+}
+span{background-color: orange;}
+.s1{
+    display: inline;    /* 인라인 : 라인에 포함됨*/
+    width: 200px; height: 200px;    /* 가로 세로 사이즈 적용 불가 */
+}
+.s2{
+    display: block; /* 블록 : 한줄을 모두 차지함*/
+    width: 200px; height: 200px;    /* 가로 세로 사이즈 적용 가능 */
+}
+.s3{
+    display: inline-block;  /* 인라인-블록 */
+    width: 200px; height: 200px;
+}
+.s4{
+    display: none;  /* 숨기기 */
+    width: 200px; height: 200px;
+}
+
+.d1{
+    display: inline;
+    size: 200px; height: 200px;
+}
+.d2{
+    display: block;
+    size: 200px; height: 200px;
+}
+.d3{
+    display: inline-block;
+    size: 200px; height: 200px;
+}
+.d4{
+    display: none;
+    size: 200px; height: 200px;
+}

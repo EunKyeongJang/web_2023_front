@@ -1,0 +1,21 @@
+.picture{
+    width: 400px;
+}
+
+.con0{      /* 본문 */
+    background-color: darkcyan;
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+#con1{      /* 포인트 */
+    display: inline;
+    color: orange;
+}
+
+.title{     /* title */
+    margin: 20px 0;
+    color: orange;
+    font-size: 30px;
+}
