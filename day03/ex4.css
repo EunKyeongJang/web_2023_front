@@ -1,18 +1,18 @@
-.pin{
+.pin{                   /* 파인애플 사진 크기 */
     width: 400px;
 }
 
-.total{
+.total{                 /* 테두리 생성 */
     width: 400px;
     margin: 0 auto ;
     border: 1px solid gainsboro;
 }
-.con0{
+.con0{                  /* 글씨 구역 여백 조정 및 가로선 */
     padding: 10px 15px 8px 15px;
     border-top: 1px solid gainsboro;
 }
 
-#tcolor{
+#tcolor{                /* 하단 텍스트 포인트 */
     font-weight: bold;
     color: orange;
 }
