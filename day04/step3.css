@@ -1,0 +1,56 @@
+
+
+#webWrap{
+    width: 900px;   /* 가로사이즈 */
+    margin: 0 auto;
+    margin: 50px auto;
+}
+header{ 
+    background-color: blue;
+    color: white;
+}
+nav{ 
+    background-color: brown; color: white;
+}
+main{
+    background-color: orange;
+    display: flex;
+    /* 900px */
+    flex-wrap: nowrap;
+}
+article{
+    width: 600px;   /* 부모 900px 에서 600px 사용 */
+}
+aside{
+    width: 300px;   /* 부모 900px 에서 300px 사용 */
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+
+#header{
+    background-color: blue;
+    color: white;    
+}
+#nav{
+    background-color: brown;
+    color: white;    
+}
+#main{
+    background-color: orange;
+    display: flex;
+    flex-wrap: nowrap;  /* 기본값이라서 생략 가능 */    
+}
+#article{
+    width: 600px;
+}
+#aside{
+    width: 300px;
+}
+#footer{
+    background-color: black;
+    color: white;
+}

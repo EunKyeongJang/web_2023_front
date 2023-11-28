@@ -5,23 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='ex5.css'>
     <script src='main.js'></script>
 </head>
 <body>
-<div>
-    <div>
-        <img class="logo" src="ex5pic.png" />
-        <br/><input type="text" />
-        <br/><input type="password" />
-        <br/><input type="submit" />
-        <br/><input type="button" />
-        <br/><input type="button" />
-    </div>
+    <div class="total">
+        <div class="con1">
+            <br/><img class="logo" src="ex5pic.png" />
+            <br/><input class="imp" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+            <br/><input class="imp" type="password" placeholder="비밀번호" />
+            <br/><input class="login" type="submit" value="로그인" />
+            <br/><a class="face" href="#"><img class="pic" src="facebookLogo.PNG" /> Facebook으로 로그인</a>
+            <br/><a class="passpage" href="#"> 비밀번호를 잊으셨나요?</a>
+        </div>
 
-    <div>
-        계정이 없으신가요?<input type="button" />
+        <div class="con2">
+            계정이 없으신가요?
+            <span><a class="new" href="#">가입하기</a></span>
+        </div>
+
     </div>
-</div>    
 </body>
 </html>

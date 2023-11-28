@@ -1,0 +1,112 @@
+/*
+    1. 선택자를 여러개 선택할 경우 쉼표사용 
+    2. 하위선택자를 선택할때는 상위선택자 하위선택자 ( 띄어쓰기 ) 구분
+*/
+
+/* 
+    inline을 화면 중앙으로 배치하는 방법
+    1. <div>로 부모요소를 만들어 <div>를 text-align: center; 로 넣는다
+    2. display: flex; justify-content: center
+*/
+
+
+/* 글머리 제거 */
+li{list-style-type: none;}
+/* a태그 색상 및 밑줄 제거 */
+a{ color: black;
+    text-decoration: none;}
+
+
+#header{
+    width: 1280px;      /* 표준 pc 모니터 사이즈 */
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;      /* 하위요소들 가로배치 */
+    flex-wrap: nowrap;  /* 생략가능 */
+    justify-content: space-between;
+}
+
+#main_logo img{     /* 'main_logo' id 하위에 img 마크 선택  */
+    margin-top: 5px;
+}
+
+#main_menu{     /* 헤더의 오른쪽 메인메뉴 */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 700px;
+}
+
+#top_menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top_menu span{     /* top_menu 하위의 span을 선택 */
+    margin: 0 10px;
+}
+
+#aside{
+    width: 230px;
+    flex-direction:column;
+}
+
+#aside h3{
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+    padding: 12px;
+}
+ul{ padding: 0; margin: 0;}  /* ul 기본여백 제거 */
+#aside ul li{
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#article{
+    width: 1000px;
+}
+#article h3{
+    font-size: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 0 15px 0;
+}
+#article img{
+    display: block;
+    margin: 0 auto;
+}
+
+#footer{
+    background-color: #2C2A29;
+    margin-top: 30px;
+    color: white;
+    padding: 25px 0;
+}
+#footerBox{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #main_img{
+    display: block;
+    margin: 0 auto;
+} */
+
+#main_img{
+    width: 100%;
+    height: 250px;
+    background-image: url("img/main_img.png");
+    background-repeat: repeat;  /* 자리가 남으면 채우기 */ 
+    background-position: center;
+}
+
+

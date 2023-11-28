@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<!-- 
+    작업순서
+        1. 메인 레이아웃 찾기
+            header, main, footer
+        2. 컨텐츠 가로사이즈 정하기
+            width : 1280px
+        3. 
+ -->
+
+<body>
+
+<div>                       <!-- web start -->
+    <div id="header">           <!-- header start -->
+        <div id="main_logo"> <img src="img/logo.png" /> </div>        
+        <div id="menus">
+            <div id="top_menu">
+                <span> <a href="#">로그인</a> </span>|
+                <span> <a href="#">회원가입</a> </span>|
+                <span> <a href="#">공지사항</a> </span>|
+            </div>
+            <ul id="main_menu">
+                <li> <a href="#"> 사진이론 </a> </li>
+                <li> <a href="#"> 사진구도 </a> </li>
+                <li> <a href="#"> 사진작가 </a> </li>
+                <li> <a href="#"> 갤러리1 </a> </li>
+                <li> <a href="#"> 갤러리2 </a> </li>
+            </ul>
+        </div>        
+    </div>
+
+    <!-- <img id="main_img" src="img/main_img.png" />  -->             <!-- main img -->
+    <img id="main_img" />
+
+    <div id="main">             <!-- main start -->
+        <div id="aside"> 
+            <h3> 사진이론 </h3>
+            <ul>
+                <li> <a href="#"> 동작 원리 </a> </li>
+                <li> <a href="#"> 무조건 찍어 보자 </a> </li>
+                <li> <a href="#"> 피사체의 배경 </a> </li>
+                <li> <a href="#">조리개와 심도 </a> </li>
+                <li> <a href="#">카메라 촬영모드 </a> </li>        
+            </ul>
+        </div>      <!-- asdie -->
+
+        <div id="article">
+            <h3> 카메라 동작 원리</h3>
+            <p>DSLR 카메라에서 DSLR은 “Digital Single Reflex”의 약어로써 우리말로는 디지털 일안 반사식 카메라을 의미합니다. DSLR은 디지털 카메라로써 카메라 내부에 들어온 빛이 상단의 펜타프리즘을 통하여 뷰파인더에 맺히게 되어 셔터를 누르기 전에 뷰 파인더를 통하여 피사체를 확인할 수 있게 됩니다.</p>
+            <img src="img/dslr.png" />
+            <p> [그림 1]은 DSLR 카메라에서 셔터를 누르기 전의 상태를 보여주는데 렌즈를 통해 들어오는 빛은 카메라 내부에서 다음과 같은 과정을 거치게 됩니다. </p>
+            <ul>
+                <li>① 빛이 카메라 렌즈를 통과합니다.</li>
+                <li>② 빛이 반사 거울에 반사되어 위쪽으로 향합니다.</li>
+                <li>③ 빛이 펜타프리즘 거울에 반사되어 뷰파인더로 향합니다.</li>
+                <li>④ 들어온 빛에 의해 뷰파인터들 통하여 피사체를 볼 수 있습니다.</li>
+                </ul>
+        </div>    <!-- article -->
+    </div>
+    
+    <div id="footer">
+        <div id="footerBox">
+            <div> <img src="img/footer_logo.png" /> </div>
+            <ul>      <!-- 하단 정보  -->
+                <li> 경기도 안산시 한대앞역 1234 우 : 123-1234 </li>
+                <li> TEL : 031-123-1234 Email : qweqwe@qweqwe.com </li>
+                <li> COPYRIGHT (c) 이젠 ALL RIGHTS RESERVED </li>
+            </ul>
+        </div>
+    </div>     <!-- footer start -->
+</div>                      <!-- web end -->
+
+</body>
+</html>
