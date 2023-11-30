@@ -1,28 +1,92 @@
 .total{
-    border: 1px solid black;
-    width: 500px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 *{
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
 input{
     border: none;
 }
+select{
+    border: none;
+}
+
+/* === main === */
 .con1{
-    width: 300px;
+    width: 450px;
     margin: 0 auto;
+    border: 1px solid #E1E1E1;    
 }
 .logo{
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .imp{
     display: block;
-    width: 300px; height: 30px;
-    margin: 0 auto;
-    border-bottom: 1px solid #8e8e8e;
-    color: #8e8e8e;
+    width: 295px; height: 35px;
+    margin: 3px auto;
+    border-bottom: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    padding: 0;
+}
+.cho{
+    color: black;
+    font-size: 13px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.info{
+    padding: 0 5px;
+}
+.login{
+    display: block;
+    width: 300px; height: 40px;
+    margin: 8px auto;
+    border-radius: 5px;
+}
+.logA{
+    background-color: rgb(255, 235, 53);
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto ;
+}
+.find{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+.find span{
+    margin-left: 10px;
 }
 
-
+/* === footer === */
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+}
+.top, .top span select{
+    font-size: 10px;
+}
+.top{
+    margin: 0px auto;
+    margin-top: 30px;
+}
+.top span{
+    margin: 0 3px;
+}
+.bottom{
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 10px;
+}
