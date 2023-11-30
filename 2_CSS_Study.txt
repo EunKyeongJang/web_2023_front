@@ -136,4 +136,13 @@ display:flex;       		: 하위요소들을 배치
 
 dsy06
     2. background-image : url("이미지 경로")       : 배경이미지
+        - background-repeat : 여백이 있을경우 배경 반복 여부
+            repeat[ 기본값 ], no repeat
+        - background-position : 배경 위치 ( *책 참고 )
+    8. box-shadow       : 박스모델 그림다
+        x축 y축 흐림정도 색상
+
+    9. overflow         : 하위요소가 상위요소보다[ 고정사이즈가 있을때 ] 보다 커질때
+        visible[ 기본값 ], hudden, scroll, auto
     
+    13.list-style-type  : 목록사용시 글머리 변경(목록의 마커 스타일)

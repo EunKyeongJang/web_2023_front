@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrap">     <!-- 전체 레이아웃 -->
+        <div id="header">   <!-- 헤더 -->
+            <div id="headerLogo">
+                <a href="http://www.naver.com">
+                    <img src="img/naverLogo.png" />
+                </a>
+            </div>
+        </div>
+
+        <form id="main">     <!-- 본문 -->
+            <!-- 입력구역_아이디 -->
+            <h5> 아이디 </h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />
+                <span> @naver.com </span>
+            </div>
+            <!-- 입력구역_비밀번호 -->
+            <h5> 비밀번호 </h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25" />
+                <span class="inputIcon" id="pwIcon"></span>
+            </div>
+            <!-- 입력구역_비밀번호 확인 -->
+            <h5> 비밀번호 확인 </h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25" />
+                <span class="inputIcon" id="pwConfirmIcon"></span>
+            </div>
+            <!-- 입력구역_이름 -->
+            <h5> 이름 </h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />                
+            </div>
+            <!-- 입력구역_생년월일 -->
+            <h5> 생년월일 </h5>
+            <div id="birthBox">
+                <div class="inputBox birthY">   <!-- birth year -->
+                    <input type="number" maxlength="4" placeholder="년(4자리)" />                
+                </div>
+                <div class="inputBox birthM">   <!-- birth month -->
+                    <select>    <!-- 목록상자 -->
+                        <option>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>                        
+                    </select>
+                </div>
+                <div class="inputBox birthD">   <!-- birth date -->
+                    <input type="number" max="31" placeholder="일" />                
+                </div>
+            </div>
+            <!-- 입력구역_성별 -->
+            <h5> 성별 </h5>
+            <div class="inputBox">
+                <select>    <!-- 목록상자 -->
+                    <option>성별</option> 
+                    <option>여성</option>
+                    <option>남성</option>                      
+                </select>
+            </div>
+            <!-- 입력구역_본인 확인 이메일 -->
+            <h5> 본인 확인 이메일 <span class="titleAt">(선택)</span> </h5> 
+            <div class="inputBox">
+                <input type="text" maxlength="30" placeholder="선택입력"/>
+            </div>
+            <!-- 입력구역_휴대전화 -->
+            <h5> 휴대전화 </h5>
+            <div class="inputBox">  <!-- 국적 선택 -->
+                <select>    <!-- 목록상자 -->
+                    <option>대한민국 +82</option>
+                    <option>미국 +1</option>  
+                </select>              
+            </div>
+            <div id="phoneBox"> <!-- 전화번호 입력 -->
+                <div class="inputBox">
+                    <input type="text" maxlength="20" placeholder="전화번호 입력" />                
+                </div>
+                <input type="button" value="인증번호 받기">
+            </div>
+
+            <div class="inputBox" id="inputAuth">
+                <input type="number" maxlength="30" placeholder="인증번호 입력하세요" disabled />                
+            </div>
+
+            <input id="signupBtn" type="submit" value="가입하기" />
+
+        </form> 
+
+        <div id="footer"> <!-- 푸터 -->
+            <div id="footerBox">
+                <div id="ftTop">
+                    <a href="#"> 이용약괒 </a>
+                    <a href="#"> 개인정보처리방침 </a>
+                    <a href="#"> 책임의 한계와 법적고지 </a>
+                    <a href="#"> 회원정보 고객센터 </a>
+                </div>
+                <div id="ftBottom">
+                    <img src="img/naverLogo.png" />
+                    <span> Copyrighting NAVER Corp. All Right Reserved</span>
+                </div>
+            </div>
+        </div>   
+    </div>    
+</body>
+</html>
