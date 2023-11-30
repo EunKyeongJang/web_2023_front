@@ -132,3 +132,8 @@ display:flex;       		: 하위요소들을 배치
         flex-end            : 밑변 정렬
         center              : 가운데 정렬
         baseline            : 내용물 아래 기준으로 정렬
+
+
+dsy06
+    2. background-image : url("이미지 경로")       : 배경이미지
+    
