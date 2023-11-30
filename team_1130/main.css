@@ -1,0 +1,34 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    border: none;
+}
+select{
+    border: none;
+}
+
+/* main1 */
+/* notice */
+#notice ul span{
+  margin-right: 10px ;
+}
+#notice h3{
+  margin: 10px 0;
+}
+.main1Btn{
+  display: flex;
+  align-items: center;
+}
+.main1Btn img{
+  display: inline-block;
+  width: 20px;
+  margin-left: 5px;
+}
