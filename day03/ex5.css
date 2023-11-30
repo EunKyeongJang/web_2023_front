@@ -4,11 +4,14 @@
 }
 .total{
     text-align: center;
+    margin: 15% 0;
 }
 .imp{
     width: 250px;
     height: 35px;
     margin: 3px auto;
+    border: 1px solid #e8e8e8;
+    padding: 0 10px;
 }
 .login{
     width: 258px;
@@ -39,7 +42,7 @@
     font-size: 12px;
 }
 .con1{
-    border: 1px solid gray;
+    border: 1px solid #e8e8e8;
     margin: 0 auto;
     width: 350px;
     padding: 10px 0 23px 0;
@@ -51,7 +54,7 @@
     margin: 5px 0;
 }
 .con2{
-    border: 1px solid gray;
+    border: 1px solid #e8e8e8;
     width: 350px;
     margin: 10px auto;
     font-size: 13px;

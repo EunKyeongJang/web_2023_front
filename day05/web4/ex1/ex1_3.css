@@ -1,0 +1,139 @@
+
+header{width: 100%;
+    height: 150px;
+    background-image: url(../sub_reservation.jpg);
+   margin: 0 auto; 
+}
+#mainBody{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+#head{
+    color: white; font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+#mainNav{
+    display: flex;
+   padding: 10pxs;
+    margin: 20px 100px;
+}
+
+article{background-color: #FCF9EA;}
+article div{ 
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#mainBody div h3{padding: 10px;}
+table{  
+    background-color: white;
+    border-collapse: collapse;
+    margin: 20px 50px;
+}
+td{
+    border: 1px solid black;
+    width: 100px;
+    height: 80px;
+}
+th{
+    padding: 10px; text-align: center; 
+    border: 1px solid black;
+}
+#top{
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+#red{color: red;}
+
+aside {
+    margin-left: 10px;
+    padding: 10px;
+}
+aside h3{
+    font-weight: bold;
+    border-left: 10px solid gray;
+  
+    padding: 10px;
+}
+
+#mainBody li{
+    padding: 3px;
+    padding-left: 10px;
+}
+#call{color: green;
+    padding-left: 10px;
+    padding: 3px;
+}
+
+/*a 밑줄 제거*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* === header === */
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 200px;
+    height: 80px;
+}
+
+#header h3{
+    display: flex;
+}
+#header h3 div{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(14, 130, 247);
+    margin-top: 23px;
+}
+#header h3 span{
+    display: block;
+    padding: 0 3px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+}
+#menus{
+    padding-top: 45px;
+}
+#menus span{
+    margin: 15px;
+}
+#menus span a:hover{
+    text-decoration: underline
+}
+
+/* === footer === */
+#footer{
+    background-color: #292C32;
+    height: 160px;
+}
+#footerInner{
+    width: 1280px;
+    color: white;
+    display: flex;
+    padding: 30px 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#footMiddle{
+    font-size: 10px;
+    
+}
+#footMiddle div{
+    margin-bottom: 30px;
+}
+#footTop h3{
+    font-size: 23px;
+    margin-top: 15px;
+}
+#footMiddle div span a{
+    color: white;
+}

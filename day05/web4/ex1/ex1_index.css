@@ -1,0 +1,66 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* === header === */
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+#header h3{
+    display: flex;
+}
+#header h3 a{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(14, 130, 247);
+}
+#header h3 span{
+    display: block;
+    padding: 10px 3px;
+    font-weight: bold;
+}
+#menus{
+    padding: 10px;
+}
+#menus span{
+    margin: 15px;
+}
+#menus span a:hover{
+    text-decoration: underline
+}
+
+/* === footer === */
+#footer{
+    background-color: #292C32;
+    height: 160px;
+}
+#footerInner{
+    width: 1280px;
+    color: white;
+    display: flex;
+    padding: 30px 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#footMiddle{
+    font-size: 10px;
+    
+}
+#footMiddle div{
+    margin-bottom: 30px;
+}
+#footTop h3{
+    font-size: 23px;
+    margin-top: 15px;
+}
+#footMiddle div span a{
+    color: white;
+}
+
+
+

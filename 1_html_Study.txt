@@ -83,7 +83,7 @@ day02
             type="file"     :첨부파일**
 
             type="radio"    : [단일선택 - name 속성 동일]
-            type="checkboc" : [복수선택 - name 속성 동일]
+            type="checkbox" : [복수선택 - name 속성 동일]
 
             type="button"   : 버튼 [*추후에 JS와 같이 사용할 예정]
             type="submit"   : form[폼] 전송 [*추후에 JAVA서버에게 전송 할예정]
@@ -116,7 +116,7 @@ day02
 
         10. checked
             - [type='radio'] 일때 체크상태
-            - [type='checkbos'] 일때 체크상태
+            - [type='checkbox'] 일때 체크상태
 
 13. <textarea>
     - 긴글 텍스트- 속성

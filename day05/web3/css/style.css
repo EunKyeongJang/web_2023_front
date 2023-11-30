@@ -1,0 +1,165 @@
+/* p.94 백그라운드 이미지 */
+body{
+    /* p.94 백그라운드 이미지 */
+    background-image: url(../images/bg.png);
+    /* p.95 글자 관련 속성 */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/* p.95 헤더영역을 가운데 정렬 */
+header{
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+}
+/* p.96 로고 가운데 정렬 */
+h1{
+    text-align: center;
+    padding: 20px 0px 16px;
+}
+/* p.96~97 !!!! : 네비게이션 가로로 정렬 */
+/* 상위선택자를 통해 하위선택자를 호출하는 방법 : 띄어쓰기로 구분 */
+header nav ul{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #7c5d48;
+    border-bottom: 2px solid #7c5d48;
+    background-color: rgba(255, 255, 255, 0.42);
+    /* rgba(레드, 그린, 블루, 투명도 */
+    padding: 12px 0px 10px;    
+}
+header nav ul li{
+    margin: 0 20px;
+}
+header nav ul li a{ /* 와일드카드 *{} 가 css 처음구문에 있을경우에 header nav ul li 에서는 글씨를 바꿀 수 없다. 따라서 a 안으로 들어가 글씨를 바꾸어야 한다. */
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5d48;
+}
+
+/* p.99 [ 특정 상태일때 = 가상클래스마우스 커서를 올렸을때의 효과 : hover */
+header nav ul li a:hover{
+    text-decoration: underline double; /*텍스트의 선*/
+}
+/* ===================== 본문 ===================== */
+/* p.101 main 태그와 aside 태그를 가로배치 */
+div{
+    width: 1240px;
+    display: flex;
+    margin: 0 auto 50px;
+    justify-content: space-between;
+}
+/* p.102 왼쪽 : main 태그 / 오른쪽 : aside 태그 */
+main{
+    width: 920px;
+    background-color: white;    
+}
+aside{
+    flex-basis: 284px;
+}
+
+
+/* 103 */
+main{
+    border-radius: 16px;
+    padding: 62px 72px 32px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+}
+
+/* 104 */
+aside nav{
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    padding: 24px 28px;     /* 안쪽여백 */
+    margin-bottom: 24px;    /* 바깥여백 */
+}
+aside nav h2{
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5d48;
+}
+/* 105 */
+aside nav ul{
+    font-size: 14px;
+}
+
+/* 107 */
+.categoryNav ul li{
+    list-style: square;
+    color: #7c5d48;
+    margin: 0 0 16px 20px;
+}
+.categoryNav ul li{
+    color: #333333;
+}
+
+.recentNav ul li{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7c5d48;
+    margin-bottom: 22px;
+}
+
+/* p. 109 내용이 사이즈보다 넘쳤을 때 스크롤 사용하기*/
+.recentNav ul{
+    height: 240px;
+    overflow: hidden scroll;
+}
+/* p.110 */
+article h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+time{
+    background-color: #91c777;
+    border-radius: 0 22px 22px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    /* p.111 */
+    padding: 11px 23px 10px 18px;
+    display: inline-block;
+}
+
+/* p.112 */
+.postdate{
+    margin-bottom: 24px;
+}
+
+/* p.113*/
+.eyecatch{
+    margin-bottom: 26px;
+}
+article h3{
+    border-bottom: 2px solid #6ab547;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    /* p.114 */
+    background-image: url(../images/h2_icon.png); /* 배경이미지 */
+    background-repeat: no-repeat;/* 배경 반복 : 여백에 채우기 */
+    background-position: left bottom;   /* 배경이미니 왼쪽아래로 배치 */
+    padding: 20px 10px 10px 48px;   /* 여백 */
+}
+
+article section p{
+    line-height: 160%;  /* 또는 1.6( 1.6 == 160 ) */
+    margin-bottom: 24px;
+}
+
+/* p.116 */
+article section{
+    margin-bottom: 50px
+}
+
+/* p.117 */
+footer{
+    background-color: #523f2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
