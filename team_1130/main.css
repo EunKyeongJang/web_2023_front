@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid orange; */
 }
 a{
     text-decoration: none;
@@ -14,21 +14,205 @@ input{
 select{
     border: none;
 }
-
-/* main1 */
+li{
+  list-style-type: none;
+}
+/* ===== main1 ===== */
 /* notice */
-#notice ul span{
+.mainList ul span{
   margin-right: 10px ;
 }
-#notice h3{
+.mainList h3{
   margin: 10px 0;
+  font-size: 25px;
+  font-weight: 500;
 }
+.mainList ul li{
+  margin-bottom: 3px;
+} 
 .main1Btn{
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .main1Btn img{
   display: inline-block;
   width: 20px;
   margin-left: 5px;
 }
+#main1{
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* ==== subBanner ==== */
+#subBanner{
+  background-color: rgb(222, 206, 190);
+  height: 390px;
+}
+#subBanner img{
+  display: block;
+  margin: 0 auto;
+  height: 390px;
+}
+
+/* ===== main2 ===== */
+#main2{
+  background-image: url(img/maain2_Title.jpg);
+  background-repeat: repeat;
+  padding-bottom: 96px;
+}
+#main2Title{
+  color: white;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+#main2Title h3{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+#main2Title p{
+  opacity: 0.8;
+}
+
+/* food section */
+#main2Food{
+  display: flex;
+  width: 1370px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+/* foodA */
+.foodA{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+  background-image: url(img/foodA.png);  
+  width: 322px;
+  height: 430px;
+  background-size: 335px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px 0 black;
+}
+/* foodB */
+.foodB{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+  background-image: url(img/foodB.png);  
+  width: 322px;
+  height: 430px;
+  background-size: 335px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;  
+  box-shadow: 0 5px 15px 0 black;
+}
+/* foodC */
+.foodC{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+  background-image: url(img/foodC.png);  
+  width: 322px;
+  height: 430px;
+  background-size: 335px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;  
+  box-shadow: 0 5px 15px 0 black;
+}
+/* foodD */
+.foodD{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+  background-image: url(img/foodD.png);  
+  width: 322px;
+  height: 430px;
+  background-size: 335px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;  
+  box-shadow: 0 5px 15px 0 black;
+}
+/* --------status 1--------- */
+.food{
+  width: 322px;
+  height: 185px;
+  background-color: white;
+}
+.food>h3{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  color: #8c6239;
+  font-size: 30px;
+}
+.food>p{
+  font-size: 13px;
+  color: #666666;
+}
+.food>.btn{
+  background-color: #cccccc;
+  width: 50px;
+  height: 22px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1.2px 1px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.food>.btn>a{  
+  color: white;
+}
+/* --------status 1 [end]--------- */
+
+/* --------status 2--------- */
+.foodSub{
+  position: absolute;
+  background-color: rgb(222, 29, 36);
+  width: 330px;
+  height: 190px;
+  top: -4px;
+  left: -4px;
+  display: none;
+}
+.foodSub>h3{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  color: white;
+  font-size: 30px;
+}
+.foodSub>p{
+  font-size: 13px;
+  color: white;
+}
+.foodSub>.btnSub{
+  background-color: rgb(216, 177, 102);
+  width: 55px;
+  height: 24px;
+  margin: 3px auto;
+  border-radius: 10px;
+  padding: 2px 1px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 12px;
+}
+.foodSub>.btnSub>a{  
+  color: white;
+}
+.food:hover .foodSub{
+  display: block;
+}
+/* --------status 2 [end]--------- */
+/* ===== main2 end ===== */
+
+/* ==== infomation ===== */
+
+/* ==== infomation end ===== */

@@ -1,0 +1,82 @@
+/* food section */
+.foodA{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+    background-image: url(img/foodA.png);  
+    width: 322px;
+    height: 430px;
+    background-size: 335px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;
+  }
+  /* --------status 1--------- */
+  .food{
+    width: 322px;
+    height: 185px;
+    background-color: white;
+  }
+  .food>h3{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: #8c6239;
+    font-size: 30px;
+  }
+  .food>p{
+    font-size: 13px;
+    color: #666666;
+  }
+  .food>.btn{
+    background-color: #cccccc;
+    width: 50px;
+    height: 22px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1.2px 1px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .food>.btn>a{  
+    color: white;
+  }
+  /* --------status 1 [end]--------- */
+  
+  /* --------status 2--------- */
+  .foodSub{
+    position: absolute;
+    background-color: rgb(222, 29, 36);
+    width: 330px;
+    height: 190px;
+    top: -4px;
+    left: -4px;
+    display: none;
+  }
+  .foodSub>h3{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 30px;
+  }
+  .foodSub>p{
+    font-size: 13px;
+    color: white;
+  }
+  .foodSub>.btnSub{
+    background-color: rgb(216, 177, 102);
+    width: 55px;
+    height: 24px;
+    margin: 3px auto;
+    border-radius: 10px;
+    padding: 2px 1px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  .foodSub>.btnSub>a{  
+    color: white;
+  }
+  .food:hover .foodSub{
+    display: block;
+  }
+  /* --------status 2 [end]--------- */
