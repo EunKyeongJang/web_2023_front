@@ -17,19 +17,34 @@ select{
 li{
   list-style-type: none;
 }
+
+/* ==== mainBanner ==== */
+#mainBanner{
+  background-color: #313232;
+  margin-bottom: 25px;
+}
+#mainBanner>img{
+  display: block;
+  height: 470px;
+  margin: 0 auto;
+}
 /* ===== main1 ===== */
+
 /* notice */
 .mainList ul span{
   margin-right: 10px ;
 }
 .mainList h3{
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 500;
 }
 .mainList ul li{
   margin-bottom: 3px;
-} 
+}
+.mainList>ul>li>a:hover{  /* li에 마우스 올릴때 색상 변환 */
+  color: #666666;
+}
 .main1Btn{
   display: flex;
   align-items: center;
@@ -45,7 +60,7 @@ li{
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 /* ==== subBanner ==== */
@@ -180,7 +195,7 @@ li{
   width: 330px;
   height: 190px;
   top: -4px;
-  left: -4px;
+  left: -3.5px;
   display: none;
 }
 .foodSub>h3{
@@ -207,12 +222,128 @@ li{
 .foodSub>.btnSub>a{  
   color: white;
 }
-.food:hover .foodSub{
+.foodA:hover .foodSub{
+  display: block;
+}
+.foodB:hover .foodSub{
+  display: block;
+}
+.foodC:hover .foodSub{
+  display: block;
+}
+.foodD:hover .foodSub{
   display: block;
 }
 /* --------status 2 [end]--------- */
 /* ===== main2 end ===== */
 
 /* ==== infomation ===== */
+#info{
+  width: 1370px;
+  margin: 72px auto;
+}
+#info>h2{  
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+#info>p{
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 48px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+#infoBox{
+  display: flex;
+  justify-content: space-between;
+}
+/* box1개 */
 
+/* status1 */
+.infoBox1{
+  width: 440px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.infoBox1>img{
+  width: 410px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.infoBox1>h3{
+  font-size: 30px;
+  font-weight: 300;  
+  margin-bottom: 30px;
+}
+.infoBox1>p{
+  text-align: center;
+  line-height: 25px;
+  color: #6c757d;
+  font-size: 15px;
+}
+.infoBox1>.readbtn{
+  width:60%;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  color: #6c757d;
+  margin: 40px 0;
+}
+/* status2 */
+.infoBoxSub{
+  position: absolute;
+  display: block; 
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.infoBoxSub>.readbtnSub{
+  background-color: black;  
+  position: absolute; 
+  width:60%;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  bottom: 40px;
+  left: 20%;  
+}
+.infoBoxSub>.shadowBox{
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  top: 14.4px;
+  width: 410px;
+  height: 217.487px;
+  left: 15px;
+}
+.infoBox1:hover .infoBoxSub{
+  display: block;
+}
+/* box1개 end*/
 /* ==== infomation end ===== */
+
+/* ==== main_Bottom ==== */
+
+#mainBottom{
+   background-color: #313232;
+}
+#mainBottom>div{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+#mainBottom>div>img{
+  width: 100%;
+  min-width: 0px;
+}
+/* ==== main_Bottom end ==== */
+

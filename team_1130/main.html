@@ -9,8 +9,11 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <img src="!" />  <!-- main banner -->
-
+    <a href="main.html">
+      <div id="mainBanner">
+        <img src="img/main_banner.png" />  <!-- main banner -->
+      </div>
+    </a>
     <div id="main1">  <!-- main1 -->
         <div class="mainList">
           <h3>NOTICE</h3>  <!-- notice -->
@@ -41,9 +44,9 @@
             </li>
           </ul>
 
-          <div class="main1Btn">
+          <a class="main1Btn" href="#">
           MORE <img src="img/morebtn.png" />
-          </div>
+          </a>
         </div>  <!-- notice end -->  
         
         <div class="mainList">
@@ -97,17 +100,17 @@
           <div class="food">  
             <h3>YUPDDUK</h3>
             <p>매운 맛의 원조</p>
-            <div class="btn"><a href="#">MORE</a></div>
-
-            <!-- status2 -->           
-            <div class="foodSub"> 
-              <h3>YUPDDUK</h3>
-              <p>매운 맛의 원조</p>
-              <div class="btnSub"> <a href="#"> MORE </a> </div>                     
-            </div>
-            <!-- status2 end -->
+            <div class="btn"><a href="#">MORE</a></div>            
           </div>          
-          <!-- status1 end -->            
+          <!-- status1 end -->  
+          
+          <!-- status2 -->           
+          <div class="foodSub"> 
+            <h3>YUPDDUK</h3>
+            <p>매운 맛의 원조</p>
+            <div class="btnSub"> <a href="#"> MORE </a> </div>                     
+          </div>
+          <!-- status2 end -->
         </div> 
         <!----------------@ foodA end @---------------->
         
@@ -118,16 +121,16 @@
             <h3>SIDE</h3>
             <p>핫시즈너 사이드메뉴</p>
             <div class="btn"><a href="#">MORE</a></div>
-
-            <!-- status2 -->           
-            <div class="foodSub"> 
-              <h3>SIDE</h3>
-              <p>핫시즈너 사이드메뉴</p>
-              <div class="btnSub"> <a href="#"> MORE </a> </div>                     
-            </div>
-            <!-- status2 end -->
           </div>          
-          <!-- status1 end -->            
+          <!-- status1 end -->           
+          
+          <!-- status2 -->           
+          <div class="foodSub"> 
+            <h3>SIDE</h3>
+            <p>핫시즈너 사이드메뉴</p>
+            <div class="btnSub"> <a href="#"> MORE </a> </div>                     
+          </div>
+          <!-- status2 end -->
         </div> 
         <!----------------@ foodB end @----------------> 
 
@@ -138,16 +141,16 @@
             <h3>TOPPING</h3>
             <p>토핑으로 더욱 맛있게!</p>
             <div class="btn"><a href="#">MORE</a></div>
-
-            <!-- status2 -->           
-            <div class="foodSub"> 
-              <h3>TOPPING</h3>
-              <p>토핑으로 더욱 맛있게!</p>
-              <div class="btnSub"> <a href="#"> MORE </a> </div>                     
-            </div>
-            <!-- status2 end -->
           </div>          
-          <!-- status1 end -->            
+          <!-- status1 end -->  
+          
+          <!-- status2 -->           
+          <div class="foodSub"> 
+            <h3>TOPPING</h3>
+            <p>토핑으로 더욱 맛있게!</p>
+            <div class="btnSub"> <a href="#"> MORE </a> </div>                     
+          </div>
+          <!-- status2 end -->          
         </div> 
         <!----------------@ foodC end @----------------> 
 
@@ -157,20 +160,21 @@
           <div class="food">  
             <h3>SET</h3>
             <p>다양한 세트메뉴</p>
-            <div class="btn"><a href="#">MORE</a></div>
-
-            <!-- status2 -->           
-            <div class="foodSub"> 
-              <h3>SET</h3>
-              <p>다양한 세트메뉴</p>
-              <div class="btnSub"> <a href="#"> MORE </a> </div>                     
-            </div>
-            <!-- status2 end -->
+            <div class="btn"><a href="#">MORE</a></div>            
           </div>          
-          <!-- status1 end -->            
+          <!-- status1 end -->   
+          
+          <!-- status2 -->           
+          <div class="foodSub"> 
+            <h3>SET</h3>
+            <p>다양한 세트메뉴</p>
+            <div class="btnSub"> <a href="#"> MORE </a> </div>                     
+          </div>
+          <!-- status2 end -->
         </div> 
         <!----------------@ foodD end @----------------> 
       </div>  <!-- main2Food end -->
+    </div>  <!-- main2 end -->
 
       <div id="info">  <!-- infomation -->
         <h2>OUR INFORMATION</h2>
@@ -178,25 +182,75 @@
 
         <div id="infoBox">
 
-          <!-- ----@ infomation Box 한개 @---- -->
-          <div class="infoBox1">
-            <img src="img/infoBox1.jpg" />
+          <!-- ----@ infomation Box1 @---- -->
+          <a class="infoBox1" href="#">
+            <img src="img/infoBox1.jpg" />  <!-- @ status1 @ -->
 
-            <div>
-              <h3>LOCATIONS</h3>
-              <p>
-                매운맛이 그리울때,
-                <br/>지금 영업중인 엽기떡볶이 매장을 찾아주세요.
-              </p>
+            <h3>LOCATIONS</h3>
+            <p>
+              매운맛이 그리울때,
+              <br/>지금 영업중인 엽기떡볶이 매장을 찾아주세요.
+            </p>
+
+            <div class="readbtn">READ MORE</div>
+
+            <div class="infoBoxSub"> <!-- @ status2 @ -->
+              <div class="readbtnSub">READ MORE</div>
+              <div class="shadowBox"></div>
             </div>
+          </a>
+          <!-- ----@ infomation Box1 end @---- -->
 
-            <div>READ MORE</div>
-          </div>
-          <!-- ----@ infomation Box 한개 end @---- -->
+          <!-- ----@ infomation Box2 @---- -->
+          <a class="infoBox1" href="#">
+            <img src="img/infoBox2.jpg" />  <!-- @ status1 @ -->
+
+            <h3>FRANCHISE</h3>
+            <p>
+              동대문 엽기떡볶이와
+              <br/>함께할 점주 여러분을 찾습니다.
+            </p>
+
+            <div class="readbtn">READ MORE</div>
+
+            <div class="infoBoxSub"> <!-- @ status2 @ -->
+              <div class="readbtnSub">READ MORE</div>
+              <div class="shadowBox"></div>
+            </div>
+          </a>
+          <!-- ----@ infomation Box2 end @---- -->
           
-        </div>
-      </div>    <!-- infomation end -->
+          <!-- ----@ infomation Box3 @---- -->
+          <a class="infoBox1" href="#">
+            <img src="img/infoBox3.jpg" />  <!-- @ status1 @ -->
 
-    </div>    <!-- main2 end -->
+            <h3>FAQ</h3>
+            <p>
+              고객님들께서 많이 하시는 질문입니다.
+              <br/>무의전에 참고 부탁드립니다.
+            </p>
+
+            <div class="readbtn">READ MORE</div>
+
+            <div class="infoBoxSub"> <!-- @ status2 @ -->
+              <div class="readbtnSub">READ MORE</div>
+              <div class="shadowBox"></div>
+            </div>
+          </a>
+          <!-- ----@ infomation Box3 end @---- -->
+
+        </div>
+      </div>    <!-- infomation end --> 
+      <div id="mainBottom" >
+        <div>
+          <img src="img/bottom1.png" />
+          <img src="img/bottom2.png" />
+          <img src="img/bottom3.png" />
+          <img src="img/bottom4.png" />
+          <img src="img/bottom5.png" />
+          <img src="img/bottom6.png" />
+        </div>
+
+      </div>
   </body>
 </html>
