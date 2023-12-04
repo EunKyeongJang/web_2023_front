@@ -1,0 +1,445 @@
+/* *{border: 2px solid red; padding: 10px;} */
+a{color: black; text-decoration: none;}
+
+
+/* ================== 폰트 적용 ================== */
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+/* ========================== header =============================== */
+
+#hdWrap{position: sticky; top: 0px;
+        background-color: white; width: 100%;
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    z-index: 500;}
+    
+    #hdWrap #header{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hdWrap #hdLogo img{width: 145px;}
+
+#hdWrap #hdMenu{display: flex;}
+
+#hdWrap #bgSubmenu{background-color: rgba(0, 0, 0, 0.9);
+        width: 100%; height: 180px; position: fixed; top: 110px; left: 0px;
+        display: none;
+    }
+    #hdWrap #bgSubmenu > div {width: 1140px; display: flex; text-align:
+            center; margin: 0 auto; padding: 0px 30px 0px 0px; justify-content: right;}
+            #hdWrap #bgSubmenu ul{width: 140px;}
+            #hdWrap #bgSubmenu ul > li {padding-top: 15px; font-size: 13px;}
+            #hdWrap #bgSubmenu ul > li > a{color: white;}
+            #hdWrap #bgSubmenu ul > li > a > span{padding-top: 15px; color: #FA8072; font-size: 13px;}
+
+        #hdWrap #hdMenu li{
+        font-size: 19px;
+        margin: 0px 35px;
+        padding: 30px 0px 20px 0px;
+    }
+
+    #hdWrap .gift{
+            color: #B22222; font-size: 21px; font-weight: bold;
+            background-color: #faebd7;
+            padding: 3px 5px 3px 5px;
+            border-radius: 10px;
+    }
+    #hdWrap .menuLogo{height: 23px; margin-right: 5px;}
+    
+    #hdWrap #topLink{display: flex; justify-content: end; padding: 10px 40px 0px 0px;}
+    #hdWrap #topLink ul{display: flex; margin-right: 15px;}
+    #hdWrap #topLink img{height: 24px;}
+    #hdWrap #topLink li > a{margin-right: 8px;}
+    #hdWrap #topLink > span{margin-left: 10px; color: #8C6239;}
+    #hdWrap .login a, .join a{color: #8C6239; margin-right: 10px; font-weight: 300;}
+        /* =============== 호버 =============== */
+        #hdWrap #nav:hover #bgSubmenu{display: block;}
+
+    /* ========================== header end =============================== */
+
+    /* ======================== main page ========================= */
+/* ==== mainBanner ==== */
+#mainTotal #mainBanner{
+    background-color: #313232;
+    margin-bottom: 25px;
+  }
+  #mainTotal #mainBanner>img{
+    display: block;
+    height: 470px;
+    margin: 0 auto;
+  }
+  /* ===== main1 ===== */
+  
+  /* notice */
+  #mainTotal .mainList ul span{
+    margin-right: 10px ;
+  }
+  #mainTotal .mainList h3{
+    margin: 15px 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  #mainTotal .mainList ul li{
+    margin-bottom: 15px;
+    font-size: 0.98rem;
+  }
+  #mainTotal .mainList>ul>li>a:hover{  /* li에 마우스 올릴때 색상 변환 */
+    color: #666;
+  }
+  #mainTotal .main1Btn{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #mainTotal .main1Btn img{
+    display: inline-block;
+    width: 20px;
+    margin-left: 5px;
+  }
+  #mainTotal #main1{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  
+  /* ==== subBanner ==== */
+  #mainTotal #subBanner{
+    background-color: rgb(222, 206, 190);
+    height: 260px;
+  }
+  #mainTotal #subBanner img{
+    display: block;
+    margin: 0 auto;
+    height: 260px;
+  }
+  
+  /* ===== main2 ===== */
+  #mainTotal #main2{
+    background-image: url(../img/maain2_Title.jpg);
+    background-repeat: repeat;
+    padding-bottom: 96px;
+  }
+  #mainTotal #main2Title{
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #mainTotal #main2Title h3{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  #mainTotal #main2Title p{
+    opacity: 0.8;
+  }
+  
+  /* food section */
+  #mainTotal #main2Food{
+    display: flex;
+    width: 1370px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  /* foodA */
+  #mainTotal .foodA{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+    background-image: url(../img/foodA.png);  
+    width: 322px;
+    height: 430px;
+    background-size: 335px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px 0 black;
+  }
+  /* foodB */
+  #mainTotal .foodB{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+    background-image: url(../img/foodB.png);  
+    width: 322px;
+    height: 430px;
+    background-size: 335px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;  
+    box-shadow: 0 5px 15px 0 black;
+  }
+  /* foodC */
+  #mainTotal .foodC{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+    background-image: url(../img/foodC.png);  
+    width: 322px;
+    height: 430px;
+    background-size: 335px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;  
+    box-shadow: 0 5px 15px 0 black;
+  }
+  /* foodD */
+  #mainTotal .foodD{   /* @@B, C, D 까지 만들어서 각각 음식 배경 넣기 @@*/
+    background-image: url(../img/foodD.png);  
+    width: 322px;
+    height: 430px;
+    background-size: 335px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;  
+    box-shadow: 0 5px 15px 0 black;
+  }
+  /* --------status 1--------- */
+  #mainTotal .food{
+    width: 322px;
+    height: 185px;
+    background-color: white;
+  }
+  #mainTotal .food>h3{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: #8c6239;
+    font-size: 30px;
+  }
+  #mainTotal .food>p{
+    font-size: 13px;
+    color: #666666;
+  }
+  #mainTotal .food>.btn{
+    background-color: #cccccc;
+    width: 50px;
+    height: 22px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1.2px 1px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  #mainTotal .food>.btn>a{  
+    color: white;
+  }
+  /* --------status 1 [end]--------- */
+  
+  /* --------status 2--------- */
+  #mainTotal .foodSub{
+    position: absolute;
+    background-color: rgb(222, 29, 36);
+    width: 330px;
+    height: 190px;
+    top: -4px;
+    left: -3.5px;
+    display: none;
+  }
+  #mainTotal .foodSub>h3{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 30px;
+  }
+  #mainTotal .foodSub>p{
+    font-size: 13px;
+    color: white;
+  }
+  #mainTotal .foodSub>.btnSub{
+    background-color: rgb(216, 177, 102);
+    width: 55px;
+    height: 24px;
+    margin: 3px auto;
+    border-radius: 10px;
+    padding: 2px 1px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  #mainTotal .foodSub>.btnSub>a{  
+    color: white;
+  }
+  #mainTotal .foodA:hover .foodSub{
+    display: block;
+  }
+  #mainTotal .foodB:hover .foodSub{
+    display: block;
+  }
+  #mainTotal .foodC:hover .foodSub{
+    display: block;
+  }
+  #mainTotal .foodD:hover .foodSub{
+    display: block;
+  }
+  /* --------status 2 [end]--------- */
+  /* ===== main2 end ===== */
+  
+  /* ==== infomation ===== */
+  #mainTotal #info{
+    width: 1370px;
+    margin: 72px auto;
+  }
+  #mainTotal #info>h2{  
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  #mainTotal #info>p{
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 48px;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+  #mainTotal #infoBox{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* box1개 */
+  
+  /* status1 */
+  #mainTotal .infoBox1{
+    width: 440px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  #mainTotal .infoBox1>img{
+    width: 410px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  #mainTotal .infoBox1>h3{
+    font-size: 30px;
+    font-weight: 300;  
+    margin-bottom: 30px;
+  }
+  #mainTotal .infoBox1>p{
+    text-align: center;
+    line-height: 25px;
+    color: #6c757d;
+    font-size: 15px;
+  }
+  #mainTotal .infoBox1>.readbtn{
+    width:60%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    color: #6c757d;
+    margin: 40px 0;
+  }
+  /* status2 */
+  #mainTotal .infoBoxSub{
+    position: absolute;
+    display: block; 
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  #mainTotal .infoBoxSub>.readbtnSub{
+    background-color: black;  
+    position: absolute; 
+    width:60%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    bottom: 40px;
+    left: 20%;  
+  }
+  #mainTotal .infoBoxSub>.shadowBox{
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    top: 14.4px;
+    width: 410px;
+    height: 217.487px;
+    left: 15px;
+  }
+  #mainTotal .infoBox1:hover .infoBoxSub{
+    display: block;
+  }
+  /* box1개 end*/
+  /* ==== infomation end ===== */
+  
+  /* ==== main_Bottom ==== */
+  
+  #mainTotal #mainBottom{
+     background-color: #313232;
+  }
+  #mainTotal #mainBottom>div{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+  }
+  #mainTotal #mainBottom>div>img{
+    width: 100%;
+    min-width: 0px;
+  }
+  /* ==== main_Bottom end ==== */
+  /* ======================== main page end ========================= */
+
+  /* =========================== footer ============================== */
+#footer{
+  background-color: #212529;
+  padding: 24px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+}
+#ftText1{display: flex;justify-content: center;}
+#ftText1 > li {padding: 0 15px;color: #666; font-weight: 400;}
+#ftText1 > li > span{ font-weight: bold; color: white;}
+#ftBox{margin: 0 auto;  display: flex;}
+#ftBox > #imgBox > img {width: 120px; opacity: 40%;}
+#ftText2{
+  padding: 0 15px; 
+  font-weight: 400; max-width: 83.333333%;
+  margin: 0 auto; line-height: 1.5;
+  min-width: 992px;
+}
+#imgBox{position: relative; 
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 16.666666%;
+}
+.ftTt1{margin: 16px 0 0;}
+#ftText3{text-align: center;margin: 32px 0 0 0;}
+/* =========================== footer end ============================== */
+
+
+/* ================================= side bar ============================== */
+#popup{
+  position: fixed; 
+  right: 1%; top: 30%;
+  border: 1px solid #852123 ;
+  color: #852123;
+  display: block; text-align: center;
+  width: 100px; border-radius: 2px;
+  font-size: 0.9em; font-weight: 600;
+  z-index: 100; line-height: 1.6;
+}
+#popBox{background-color: white;padding-top: 10px;}
+#popBox a{background-color: white;color:#852123;;}
+.popup1, .popup2, .popup3{background-size: 53px 53px;}
+#topBox {background-color: #852123;padding: 1px;}
+#topBox a{
+  background-color: #852123;
+  color : white; font-weight: bold;
+  text-decoration: none;
+}
+/* ================================= side bar end ============================== */

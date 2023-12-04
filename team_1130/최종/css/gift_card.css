@@ -1,0 +1,263 @@
+/* *{border: 2px solid red; padding: 10px;} */
+a{color: black; text-decoration: none;}
+
+/* ================== 폰트 적용 ================== */
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+/* ======================= header ========================== */
+#hdWrap{position: sticky; top: 0px;
+  background-color: white; width: 100%;
+border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+z-index: 500;}
+
+#hdWrap #header{
+width: 1140px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#hdWrap #hdLogo img{width: 145px;}
+
+#hdWrap #hdMenu{display: flex;}
+
+  #bgSubmenu{background-color: rgba(0, 0, 0, 0.9);
+  width: 100%; height: 180px; position: fixed; top: 110px; left: 0px;
+  display: none;
+}
+  #bgSubmenu > div {width: 1140px; display: flex; text-align:
+      center; margin: 0 auto; padding: 0px 30px 0px 0px; justify-content: right;}
+  #bgSubmenu ul{width: 140px;}
+  #bgSubmenu ul > li {padding-top: 15px; font-size: 13px;}
+  #bgSubmenu ul > li > a{color: white;}
+  #bgSubmenu ul > li > a > span{padding-top: 15px; color: #FA8072; font-size: 13px;}
+
+  #hdWrap #hdMenu li{
+  font-size: 19px;
+  margin: 0px 35px;
+  padding: 30px 0px 20px 0px;
+}
+
+#hdWrap .gift{
+      color: #B22222; font-size: 21px; font-weight: bold;
+      background-color: #faebd7;
+      padding: 3px 5px 3px 5px;
+      border-radius: 10px;
+}
+#hdWrap .menuLogo{height: 23px; margin-right: 5px;}
+
+#hdWrap #topLink{display: flex; justify-content: end; padding: 10px 40px 0px 0px;}
+#hdWrap #topLink ul{display: flex; margin-right: 15px;}
+#hdWrap #topLink img{height: 24px;}
+#hdWrap #topLink li > a{margin-right: 8px;}
+#hdWrap #topLink > span{margin-left: 10px; color: #8C6239;}
+#hdWrap .login a, .join a{color: #8C6239; margin-right: 10px; font-weight: 300;}
+  /* =============== 호버 =============== */
+  #hdWrap #nav:hover #bgSubmenu{display: block;}
+/* ======================= header end ========================== */
+
+/* ============================= gift card ============================== */
+/* ==== main_top ==== */
+#mainTop{
+  width: 1110px;
+  margin: 0 auto;
+}
+#mainTop>h1{
+  color: #8C6239;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+/* ==== main_top end ==== */
+
+/* ==== main_menu ==== */
+#mainMenu{
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  margin: 0 auto;
+}
+/* 선택한 페이지 메뉴 */
+.menuPick{
+  z-index: 5;
+  width: 20%;
+  border-top: 1px solid #8c6239;
+  border-right: 1px solid #8c6239;
+  border-left: 1px solid #8c6239;
+  padding: 20px;
+  text-align: center;
+  color: #8C6239;
+}
+.menuPick>h3{
+  font-size: 18px;
+  font-weight: 300;
+}
+/* 선택한 페이지 메뉴 end */
+.menuNone{  
+  z-index: 1;
+  width: 20%;
+  background-color: #F7F0E4;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #8c6239;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  color: #8C6239;
+}
+.menuNone>h3{
+  font-size: 18px;
+  font-weight: 300;
+}
+.menuNone:hover{  /* 선택안한 메뉴에 마우스 올리면 background-color 바뀜 */
+  background-color: #F9F5EE;
+}
+/* 선택 @안@ 한 페이지 메뉴 */
+
+/* ==== main_menu end ==== */
+
+/* ==== main ==== */
+#main{
+  width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 0;
+  margin-bottom: 80px;
+}
+#main>h2{ 
+  color: #8C6239;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+.gftBuy{
+  display: flex;
+  width: 950px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#line{
+  border-left: 1px solid #E9D7CD;
+}
+.gftBuyBox{
+  box-sizing :border-box;
+  display: inline-block;
+  width: 465px;
+  height: 490px;
+  background-color: #9c8371;
+  border-radius: 15px;
+  color: white;
+  padding-top: 45px;
+  border: 1px solid #82624c;
+  box-shadow: 3px 3px 8px #dbcabf;
+}
+.gftBuyBox>h3{
+  font-size: 24px;
+}
+
+.gftBuyBox>p{
+  line-height: 25px;
+}
+
+.gftBuyBox>div{
+  justify-content: center;
+  color: white;
+  display: block;
+  width: 250px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.gftBuyBox>div>a{
+  display: inline-block;
+}
+
+/* gft_boxA */
+
+.gftBuyBoxA>p>span{
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+}
+.gftBuyBoxA>span{
+  display: block;
+}
+.gftBuyBoxA>div{  
+  background-color: #808080;  
+}
+/* gft_boxA end */
+
+/* gft_boxB */
+.gftBuyBoxB>p>span{
+ color: #ffc019;
+ font-size: 19px;
+ font-weight: bold;
+}
+
+.gftBuyBoxB>div{
+  background-color: black;
+}
+.gftBuyBoxB>div>a{
+  color: white ;
+}
+/* gft_boxB end */
+
+/* ==== main end ==== */
+
+/* ============================= gift card end ============================== */
+
+/* =========================== footer ============================== */
+#footer{
+  background-color: #212529;
+  padding: 24px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+}
+#ftText1{display: flex;justify-content: center;}
+#ftText1 > li {padding: 0 15px;color: #666; font-weight: 400;}
+#ftText1 > li > span{ font-weight: bold; color: white;}
+#ftBox{margin: 0 auto;  display: flex;}
+#ftBox > #imgBox > img {width: 120px; opacity: 40%;}
+#ftText2{
+  padding: 0 15px; 
+  font-weight: 400; max-width: 83.333333%;
+  margin: 0 auto; line-height: 1.5;
+  min-width: 992px;
+}
+#imgBox{position: relative; 
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 16.666666%;
+}
+.ftTt1{margin: 16px 0 0;}
+#ftText3{text-align: center;margin: 32px 0 0 0;}
+/* =========================== footer end ============================== */
+
+
+/* ================================= side bar ============================== */
+#popup{
+  position: fixed; 
+  right: 1%; top: 30%;
+  border: 1px solid #852123 ;
+  color: #852123;
+  display: block; text-align: center;
+  width: 100px; border-radius: 2px;
+  font-size: 0.9em; font-weight: 600;
+  z-index: 100; line-height: 1.6;
+}
+#popBox{background-color: white;padding-top: 10px;}
+#popBox a{background-color: white;color:#852123;;}
+.popup1, .popup2, .popup3{background-size: 53px 53px;}
+#topBox {background-color: #852123;padding: 1px;}
+#topBox a{
+  background-color: #852123;
+  color : white; font-weight: bold;
+  text-decoration: none;
+}
+/* ================================= side bar end ============================== */

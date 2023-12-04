@@ -1,0 +1,174 @@
+body{font-family: 'Noto Sans KR', sans-serif;}
+*{box-sizing: border-box; }
+body > div{display: flex; justify-content: center;}
+a{text-decoration: none ;color: black}
+
+/* ==================================헤더======================================= */
+#hdWrap{position: fixed; top: 0px;
+    background-color: white; width: 100%;
+border-bottom: 1px solid rgba(33, 37, 41, 0.1);}
+#header{
+width: 1140px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#hdLogo img{width: 145px;}
+
+#hdMenu{display: flex;}
+
+    #bgSubmenu{background-color: rgba(0, 0, 0, 0.9);
+    width: 100%; height: 180px; position: fixed; top: 110px; left: 0px;
+    display: none;
+}
+    #bgSubmenu > div {width: 1140px; display: flex; text-align:
+        center; margin: 0 auto; padding: 0px 30px 0px 0px; justify-content: right;}
+    #bgSubmenu ul{width: 140px;}
+    #bgSubmenu ul > li {padding-top: 15px; font-size: 13px;}
+    #bgSubmenu ul > li > a{color: white;}
+    #bgSubmenu ul > li > a > span{padding-top: 15px; color: #FA8072; font-size: 13px;}
+
+#hdMenu li{
+    font-size: 19px;
+    margin: 0px 35px;
+    padding: 30px 0px 20px 0px;
+}
+
+    .gift{
+        color: #B22222; font-size: 21px; font-weight: bold;
+        background-color: #faebd7;
+        padding: 3px 5px 3px 5px;
+        border-radius: 10px;
+}
+.menuLogo{height: 23px; margin-right: 5px;}
+
+#topLink{display: flex; justify-content: end; padding: 10px 40px 0px 0px;}
+#topLink ul{display: flex; margin-right: 15px;}
+#topLink img{height: 24px;}
+#topLink li > a{margin-right: 8px;}
+#topLink > span{margin-left: 10px; color: #8C6239;}
+.login a, .join a{color: #8C6239; margin-right: 10px; font-weight: 300;
+}
+    /* =============== 호버 =============== */
+    #nav:hover #bgSubmenu{display: block;}
+
+
+
+/* =============================================메인========================================= */
+#wrap{width: 1140px;padding-top: 120px;}
+/* 제목 */
+.title, .subTitle{color: #8c6239;}
+.title{
+    margin-top: 30px; margin-bottom: 40px; padding: 0px 15px;
+    font-weight: 600; font-size: 35.2px;
+}
+/* 부제목 */
+.subTitle{
+    padding: 0px 15px;
+    font-size: 24px;
+    margin: 20px 0px 16px;
+    font-weight: 300;   
+}
+/* 본문 1 */
+#voice{
+    width: 1140px; height: 230px;
+    background-image: url(../images/bg_customervoice.png);
+    font-weight: 300; padding: 30px 60px;
+    display: flex; flex-wrap: wrap; 
+    width: 100%; line-height: 1.5; margin-top: 50px;
+    margin-right: -15px; margin-left: -15px; padding: 30px 60px;   
+}
+.subSub{color: #f6ca41; font-size: 25.6px; font-weight: 300;}
+#voiceTxt{
+    color: white; width: 595px;
+    margin: 16px 0 0; padding: 0 15px;
+}
+#voiceTxt > .subSub{margin-bottom: 16px;}
+#voiceTxt{font-size: 16px;}
+#vText{margin-bottom: 16px; font-weight: 400;}
+#callCent{
+    border: 1px solid #888; border-radius: 25px;
+    padding: 10px; margin: 4px 0 0;
+    background-color: rgba(0,0,0,0.2);
+    max-width: 41.666667%; font-weight: 300;
+    font-size: 14.4px;
+}
+#callCent > p{text-align: center;}
+#callCent > div p{color: white; opacity: 90%;}
+.date{padding: 0 15px;}
+#callCent > div{
+    display: flex; flex-wrap:nowrap;
+    margin: 0 15px; padding-right: 0px;
+}
+/* 본문 2 */
+#QnA{
+    color:#999; font-weight: 300;
+    display: flex; justify-content: space-between;
+    margin: 98px -15px 98px ;
+}
+#QnA div{line-height: 1.5;}
+#QnA span{color: #de1d24;font-size: 24px; font-weight: bolder}
+#QnA input{border: none;
+    font-size: 1.2rem;
+    height: 55px; width: 250px;
+    padding: 12px; margin: 30px auto 0px;
+    text-align: center;
+    font-weight: 300; color: #fff;
+    cursor: pointer; 
+}
+#faqBt > a > input{background-color: #8c6239}
+#guideBt > a > input{background-color: #808080;}
+.mainTxt img{width: 160px; margin: 0px 0px 30px;}
+.qnaT1{color: #8c6239; margin: 0 0 16px;}
+.mainTxt{padding: 0 15px; text-align: center; width: 570px;}
+.mainTxt > div{margin: 0 0 16px;}
+#faqBt{color: #8c6239}
+/* ==============================================푸터========================================= */
+#footer{
+    background-color: #212529;
+    padding: 24px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+#ftText1{display: flex;justify-content: center;}
+#ftText1 > li {padding: 0 15px;color: #666; font-weight: 400;}
+#ftText1 > li > span{ font-weight: bold; color: white;}
+#ftBox{margin: 0 auto;  display: flex;}
+#ftBox > #imgBox > img {width: 120px; opacity: 40%;}
+#ftText2{
+    padding: 0 15px; 
+    font-weight: 400; max-width: 83.333333%;
+    margin: 0 auto; line-height: 1.5;
+    min-width: 992px;
+}
+#imgBox{position: relative; 
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 16.666666%;
+}
+.ftTt1{margin: 16px 0 0;}
+#ftText3{text-align: center;margin: 32px 0 0 0;}
+/* ==============================================사이드========================================= */
+#popup{
+    position: fixed; 
+    right: 1%; top: 30%;
+    border: 1px solid #852123 ;
+    color: #852123;
+    display: block; text-align: center;
+    width: 100px; border-radius: 2px;
+    font-size: 0.9em; font-weight: 600;
+    z-index: 100; line-height: 1.6;
+}
+#popBox{background-color: white;padding-top: 10px;}
+#popBox a{background-color: white;color:#852123;;}
+.popup1, .popup2, .popup3{background-size: 53px 53px;}
+#topBox {background-color: #852123;padding: 1px;}
+#topBox a{
+    background-color: #852123;
+    color : white; font-weight: bold;
+    text-decoration: none;
+}

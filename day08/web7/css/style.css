@@ -259,9 +259,8 @@ header .scroll img{
  
 
 /* p.illust{}   : p 요소의 class명이 illust이면
-   .illust{}    : 전체요소의 class명이 illust이면 */
+   .illust{}    : 전체요소의 class명이 illust이면 
 
-   /* 
     p.150
    css 덮어쓰기 우선순위
     !important > style > id > class > 타입 > *
@@ -284,6 +283,7 @@ header .scroll img{
             
             차이점 : 1. flex-dirextion: columns; 일때
                             width : 고정       flex-basis : 늘어남
-                    2. 
+                    2. 이미지가 설정값보다 클때
+                            width : 고정       flex-basis : 이미지에 맞게 값이 늘어남
 
-    */
+*/
