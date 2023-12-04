@@ -1,0 +1,289 @@
+body{   /* p.136 */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212;
+}
+.ffJosefin{ /* header -> nav -> ul */
+    font-family: 'Josefin Sans', sans-serif;
+}
+.innerWrap{ /* p.138 */
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+main h2{ /* p.139 */
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 0.5em;
+    margin-bottom: 80px;
+}
+header{ /* p.140 */
+    background: url(../images/hero.jpg) no-repeat right center /cover;
+    /* 위에 요소와 같은말 */
+    /* background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+ */
+}
+header .innerWrap{  /* p.142 */
+    height: 720px;
+    position: relative;
+}
+header h1{
+    padding-top: 120px;    
+}
+header .scroll{
+    /* header.innerWrap 기준점( position: relative; ) */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+header .scroll img{
+    margin-top: 8px;
+}
+
+/* p.146 */
+header nav{
+    position: fixed;    /* 화면 위치 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;   /* 메뉴가 항상 앞에 나오도록 */
+}
+/* p.146 ~ 147 */
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;/* hover 시 밑줄 */
+}
+
+/* p.149 */
+.msgSec{
+    background-color: #fbfaf7;
+}
+.msgSec p{
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+}
+.msgSec p.illust{   
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative; /* 하위요소의 position 기준점 */
+}
+
+.msgSec p.illust::before{
+    content: url(../images/deco_left.png);
+    position: absolute;
+    left: 320px;
+    bottom: -30px;
+    
+}
+
+.msgSec p.illust::after{
+    content: url(../images/deco_right.png);
+    position: absolute;
+    right: 320px;
+    bottom: -30px;
+}
+
+/* p.153 */
+.dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+
+/* p.154 */
+.dateSec .layoutWrap{
+    display: flex;
+}
+.dateSec .layoutWrap p{
+    flex-basis: 735px;
+}
+.dateSec .layoutWrap div{
+    width: 465px;
+    padding-top: 100px;
+}
+.dateSec .dateDetailSec{
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    line-height: 1.2;
+}
+
+.word1{
+    font-size: 50px;
+}
+.word2{
+    font-size: 40px;
+}
+.word3{
+    font-size: 60px;
+}
+
+.accessSec{
+    margin-left: 48px;
+}
+.accessSec h3{
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px ;
+}
+.accessSec p{
+    line-height: 1.6;
+}
+
+.formSec{   /* p.157 ~ 158 */
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+form{
+    width: 600px;
+    margin:  0 auto;
+}
+/* 요소[속성명=값] */
+input[type="text"], /*input 중에서 type이 "text"이면 선택 */
+input[type="email"],
+select,
+textarea{   /* css가 reset 되었기 때문에 직접 input 꾸미기 */
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+    width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+
+/* p.160 */
+.attendRadio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.attendRadio label{
+    margin: 0 20px;
+    font-size: 24px;
+}
+.allergyCheck label{
+    margin-right: 24px;
+}
+select{
+    background: white url(../images/arrow.png) no-repeat 98% 50%/17px 10px
+}
+
+/* p.161 */
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+form>p{
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.submitBtn{
+    text-align: center;    
+}
+input[type="submit"]{
+    background-color: #121212;
+    color: white;
+    padding: 18px 80px; /* 버튼 크기 */
+}
+
+/* p.162 */
+footer{
+    background-color: #c7887f;
+    color: #f3e995;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+/* p.163 패럴랙스 효과 */
+.dateSec{ margin-bottom: 480px;}
+
+.dateSec::after{
+    content: "";    /* 배경을 넣을 예정이라서 내용물은 없는 상태 */
+    position: fixed;    /* 스크롤이 움직여도 고정 */
+    left: 0 ;
+    top: 0;
+    width: 100%; height: 100%;  /* 화면에 가득 채우기 */
+    background: url(../images/bg.jpg) no-repeat center/cover;
+    z-index: -1 /* 기본 요소들보다 아래에 배치 */
+}
+
+/* p.165  트랜지션 애니메이션 효과 */
+input[type="submit"]:hover{ /* 마우스 올렸을때 */
+    background-color: #c7887f;
+    margin-left: 20px;
+    transition-property: background-color, margin-left; /* 또는all */
+    transition-duration: 300ms; /* 0.3초 */
+    transition-timing-function: ease-in;    /* 시작 천천히 끝 빨리 */
+    transition-delay: 0ms;  /* 지연 시간 없음 */
+
+    /* transition: background-color, margin-left 300ms ease-in 0ms; */  /* 위와 똑같이 동작 */
+}
+/* p.167  키 프레임  설정 */
+@keyframes scrollAnumation{
+    0%{transform: scaleY(0); transform-origin: top;}    /* 시작점 */
+    50%{transform: scaleY(1); transform-origin: top;}   /* 가운데 이전*/
+    50.1%{transform: scaleY(1); transform-origin: bottom;}  /* 가운데 이후 */
+    100%{transform: scaleY(0); transform-origin: bottom;}   /* 종료점 */
+}
+
+
+/* p.169 키프레임에 애니메이션 적용*/
+header .scroll img{
+    animation-name: scrollAnumation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+    
+ 
+
+/* p.illust{}   : p 요소의 class명이 illust이면
+   .illust{}    : 전체요소의 class명이 illust이면 */
+
+   /* 
+    p.150
+   css 덮어쓰기 우선순위
+    !important > style > id > class > 타입 > *
+    1. p.{ text-size : 16px !important; }
+    2. <div style="text-size:16px;">
+    3. #id{text-size: 16px;}
+    4. .class{text-size: 16px;}
+    5. p{text-size: 16px;}
+    6.*{text-size: 16px;}
+
+     p.151 ~ 152 : 가상요소 선택자
+        -html에 없던 내용물[ 주로 텍스트, 이미지 ]을 css에서 넣어주기가 가능한 기능
+     ::before   : 요소의 앞부분에 내용물
+     ::after    : 요소의 뒷부분에 내용물 가상으로 넣어주기
+        content : 가상요소의 내용물
+
+        flex-basis: 465px;  : 유연성
+            vs
+        width: 465pxx;      : 고정
+            
+            차이점 : 1. flex-dirextion: columns; 일때
+                            width : 고정       flex-basis : 늘어남
+                    2. 
+
+    */
