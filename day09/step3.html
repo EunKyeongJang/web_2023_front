@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <!-- p.84 기본 자료형 -->
+    <script>
+        //p.85 문자열 만들기
+        //1. 작은따옴표룰 감싼다.
+        console.log("안녕하세요.1");
+        //2. 큰따옴표를 감싼다.
+        console.log("안녕하세요.2");
+        //3. 문자열 안에 작은따옴표 표현
+        console.log("안녕하세요.'3'");
+        //4. 문자열 안에 큰따옴표 표현
+        console.log('안녕하세요."4"');
+
+        //p.86 이스케이프 제어 문자
+        console.log("안녕하세요.5 \n 안녕하세요.6");
+        console.log("안녕하세요.5 \t 안녕하세요.6");
+        console.log("안녕하세요.5 \" 안녕하세요.6");
+        console.log("안녕하세요.5 \\ 안녕하세요.6");
+        
+        //예제1
+        console.log("\\ \t /\\ \n )\t( \')\n(  /  )\n \\(__)|");
+
+        //예제2
+        console.log
+        ("|\\_/|\n|q p|\t/}\n( 0 )\"\"\"\\ \n|\'^\'`\t |\n||_/=\\\\__|");
+
+        //p.87 문자열 연산자
+        console.log("가나다라마바사"+"아자차카타파하")
+        console.log("안녕하세요"[0]);   // 안
+        console.log("안녕하세요"[3]);   // 세
+        console.log("안녕하세요".length);  //5
+        console.log("안녕하세요"[6]);   //undifined : 해당 위치에 없기 때문
+        console.log("       ".length);  //공백도 문자
+
+        //p.89 숫자 자료형
+        console.log(273);   //숫자(정수)273 
+                //vs
+        console.log("273");   //문자열 273
+
+        console.log( 52.273 );  //숫자(실수) 52.273
+
+    </script>
+
+</body>
+</html>
