@@ -127,4 +127,16 @@ function 문제5(){//f 문제5 start
                    회원아이디가 admin 이고 비밀번호가 1234 이면 로그인 성공 출력 아니면 로그인실패 출력
 */
 
+function 문제6(){
+    let value1=document.querySelector('#input1').value;     console.log(value1);
+    let value2=document.querySelector('#input2').value;     console.log(value2);
+    let result='';
+
+    if(value1=='admin' && value2==1234){ result="로그인 성공"; }
+    else{ result="로그인 실패"; }
+    console.log(result);
+
+    document.querySelector("#result").innerHTML=`${result}`;
+}
+
 //문제 7 : 3개의 정수[입력값1/2/3] 를 입력받아서 오름차순 / 내림차순 출력 

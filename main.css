@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+}
+#htmlCssBox>div{
+    border: 1px solid black;
+    width: 350px;
+    height: 210px;
+    padding: 0px 10px 20px;
+    margin: 5px;
+}
+#htmlCssBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+}
+
+#jsBox>div{
+    border: 1px solid black;
+    width: 350px;
+    height: 210px;
+    padding: 0px 10px 20px;
+    margin: 5px;
+}
+#jsBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+}

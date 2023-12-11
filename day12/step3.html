@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <h4>회원 등록/삭제</h4>
+    회원명 : <input id="nameInput" value="" type="text" />
+    <input onclick="회원등록()" type="button" value="등록" />   <!-- js 함수 호출 -->
+    <input onclick="회원삭제()" type="button" value="삭제" />
+
+    <h3>회원명단</h3>
+    <div id="nameList"> </div>
+
+    <script src='step3.js'></script>    
+    <!-- div가 선언된 후 script에 적용해야함(header에 넣으면 오류, js가 먼저 실행되어 div를 못찾기 때문) -->
+    <!-- js 에 function 단위로 있으면 실행위치를 어디로 하던 상관없음 >>함수는 호출해야 실행되기 때문 -->
+</body>
+</html>
