@@ -9,7 +9,7 @@ function 입차(){//f start
     const carTime = document.querySelector('#inTime').value;
     
 
-        if( inCar.length != 4 ){ alert('차량번호 4자리를 입력해주세요.'); return; }
+        if( inCar== "" ){ alert('차량번호 4자리를 입력해주세요.'); return; }
         /* if( inTime.indexOf(carTime)<0){alert('시간을 입력해주세요');return;}
         */
         if(carTime==""){ alert('시간을 입력 해 주십시오.'); return; }
