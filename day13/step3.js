@@ -148,12 +148,9 @@ for(let dan=2; dan<=9; dan++){
 for(gob=1; gob<=9; gob++){
     console.log(`곱 : ${gob}`);
 }
-for(let dan=2; dan<=9; dan++){
-
-    for(gob=1; gob<=9; gob++){
-        console.log(`${dan} X ${gob} = ${dan*gob}`);
-    }
-}
-
-        
 //3. 단과 곱 합치기 [단 안에 곱이 들어간다. 단for 상위, 곱for 하위]
+for(let dan=2; dan<=9; dan++){
+	for(let gob=1; gob<=9; gob++){
+		console.log(`${dan} X ${gob} = ${dan*gob}`);
+	}
+}
