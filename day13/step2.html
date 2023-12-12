@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step2.css'>
+    <script src='step2.js'></script>
+</head>
+<body>
+    <div style="width: 50%; border: 1px solid black;">
+        <h3> 입차 </h3>
+        차량번호 : <input id="inNum" type="text" />  <br />
+        입차시간: <input id="inTime" type="time" />  <br />
+        <input onclick="입차()" type="button" value="입차" />
+    </div>
+
+    <div style="width: 50%; border: 1px solid black;">
+        <h3>출차</h3>
+        차 번호를 입력하세요: <input id="carOutNum" type="text" />    <br/>
+        출차 시간을 입력하세요 :<input id="carOut"  type="time" />     <br/>
+        <input onclick="출차()" type="button" value="출차" />
+    </div>
+</body>
+</html>
