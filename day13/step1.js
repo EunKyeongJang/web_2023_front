@@ -61,8 +61,8 @@ function 로그인()   //f start   선언부  실행조건 : 로그인버튼[ ty
     배열호출 : 변수/상수명 또는 변수/상수명[인덱스]
     함수호출 : 함수명()
 
-    **구현에서는 crud가 가장 중요
+    **구현에서는 crud가 가장 중요(Creat Read Update Delete)
 
     html -> js : document.querySelector("선택자").value;
-    js -> html : document.querySelector("7ㅑ선택자").inner;
+    js -> html : document.querySelector("선택자").innerHTML;
 */
