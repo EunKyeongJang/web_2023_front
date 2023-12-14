@@ -1,6 +1,10 @@
 a{
     text-decoration: none;
 }
+body{
+    width: 100%;
+    margin: 20px 30px;
+}
 #htmlCssBox>div{
     border: 1px solid black;
     width: 350px;
@@ -25,4 +29,12 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 20px;
+}
+span{
+    display: block;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
 }

@@ -1,0 +1,100 @@
+/* 공통 css */
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#wrap{
+    width: 800px;
+    margin: 0 auto;
+}
+#wrap>h1{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+#underLine{
+    width: 80px;
+    height: 4px;
+    background-color: mediumspringgreen;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+/* -------main-------- */
+#info{ display: flex;  flex-direction: column;}
+#main{
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#info>span{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    display: flex;
+}
+#info>span>input{
+    border: none;
+    margin-left: 10px;
+}
+#main>button{
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: mediumspringgreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* -----bottom---------- */
+#bottom{width: 600px; margin: 30px auto;}
+#bottomTop{
+    display: block;
+    display: flex;
+    width: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#bottomTop>span{ 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.listArray div{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.deleteBtn>div>button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.listArray{
+    text-align: center;
+    width: 150px;
+}
+#sum{
+    display: flex;
+    background-color: mediumspringgreen ;
+    height: 50px;
+    width: 600px;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#sum>span{    
+    font-size: 20px;
+    font-weight: bold;
+}
+
