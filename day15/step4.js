@@ -82,24 +82,29 @@ function 출력함수(){
     
 }//f end
 
-function makeComma(합계){
-    let changeType=``;
+function makeComma(합계){   //콤마찍기
+    let changeType=[];
     changeType=String(합계);
 
-let s=``;
-let r=``;
-let n=0;
+    let s=[];
+    let r=[];
+    let n=0;
 
-for(let i=changeType.length; i>=1;i--){
-    n++;
-    s+=changeType[i-1];
-    console.log(s);
+    for(let i=changeType.length; i>=1;i--){
+        n++;
+        s+=changeType[i-1];
+        console.log(changeType.length);
+        
+        if(i==1 && changeType.length%3==0){
+            break;
+        }
 
-    if(n%3==0){
-        s+=`,`;
-    }       
-}
-for(let i=s.length; i>=1; i--){ r+=s[i-1]; }
+        if(n%3==0){
+            s+=`,`;
+        }   
+            
+    }
+    for(let i=s.length; i>=1; i--){ r+=s[i-1]; }   
 
-return r;
+    return r;
 }

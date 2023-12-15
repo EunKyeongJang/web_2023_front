@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    font-size: 18px; font-weight: bold;
+    font-family: 'SUITE-Regular';
+}
+h1{
+    font-size: 25px; text-align: center;
+    margin-bottom: 30px;
+}
+input{border: none;}
+
+#wrap{
+    display: flex; justify-content: space-between;
+    width: 1200px; margin: 0 auto;
+}
+/* 거래처================================================== */
+#tT{
+    margin: 0 auto; text-align: center;
+    margin-bottom: 10px; padding-left: 30px;
+}
+#tT>div>input{padding: 10px;}
+div> #등록1 {
+    background-color: rgb(165, 197, 197); margin-bottom: 40px;
+    width: 250px; height: 30px;
+    border-radius: 20px; 
+    cursor: pointer;
+   
+}
+/* 거래처 입력 end================== */
+#top{text-align: center; width:500px;}
+#tBT{
+    display: flex; justify-content: space-between;
+    padding-bottom:10px;
+    border-bottom: 2px solid gray;
+    
+}
+#tBT>div{width: 80px;}
+#출력1>div{
+    padding-top: 5px;
+    display: flex; justify-content: space-between;
+    
+}
+#출력1>div>div{width: 80px;}
+#line{border-right: 3px dotted gray;}
+/* 발주============================================ */
+#bT{
+    display: flex; margin-top: 100px; 
+    margin-bottom: 20px; justify-content: space-around;
+    width: 500px; height: 120px;
+}
+
+div> #등록2{
+    background-color: rgb(103, 148, 173);
+    border-radius: 10px;
+    width: 50px; height: 35px;
+    cursor: pointer;
+}
+div>select{width: 100px; height: 30px;}
+
+#bTB{
+    display: flex; justify-content: space-between;
+    padding-bottom:10px;
+    border-bottom: 2px solid gray;
+}
+#bBT>div{width: 80px;}
+div>#개수{border-bottom:1px solid black ; width: 80px;}
+.출력2row{
+    padding-top: 5px;
+    display: flex; justify-content: space-between;
+}
+
+#총합계 {
+    background-color:rgb(165, 197, 197);
+    text-align: center; border-radius: 20px;
+    height: 30px; padding-top: 4px;
+    margin-top: 20px;
+}

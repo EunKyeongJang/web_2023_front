@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='team.js'></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="거래처">  
+            <h1>거래처 등록</h1>
+            <div id="top">
+                <div id="tT">
+                    <div>부품 : <input id="부품" type="text" placeholder="부품"></div>
+                    <div>업체 : <input id="업체" type="text" placeholder="업체"></div>
+                    <div>가격 : <input id="가격" type="text" placeholder="가격"></div>    
+                </div>
+
+                 <div><input id="등록1" onclick="등록1()" type="button" value="등록"></div>
+
+                <div id="tB">
+                    <div id="tBT">
+                        <div>부품</div>
+                        <div>업체</div>
+                        <div>가격</div>
+                        <div>비고</div>
+                    </div>
+                    <div>
+                        <div id="출력1">
+                            <!-- <div>부품</div>
+                            <div>업체</div>
+                            <div>가격</div> -->
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+        </div>
+        <div id="line"> </div>
+        <div id="발주">
+            <h1>부품 발주</h1>
+            <div id="bT">
+               <div>
+                    <select id="부품s">
+                        <option>부품</option>
+                    </select>
+                </div>
+                <div class="개수">개수: <input id="개수" type="text" placeholder="1"></div>
+                <div><input id="등록2" onclick="등록2()" type="button" value="주문"></div>
+            </div>
+
+            <div>
+                <div id="bTB">
+                    <div>부품</div>
+                    <div>업체</div>
+                    <div>개수</div>
+                    <div>총가격</div>
+                    <div>비고</div>
+                </div>
+
+                <div id="출력2">
+                    
+                </div>
+            </div>
+
+            <div id="총합계"> 총 합계 : </div>
+        </div>
+    </div>
+
+</body>
+</html>
