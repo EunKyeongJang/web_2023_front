@@ -66,19 +66,27 @@ function 등록1(){   //등록1 f start
 
 function 삭제1(삭제1매개변수){    //삭제1 함수 start
     console.log('삭제1 함수 실행');
+    //231215_19:09 수정
+        let search=0;
+        let 부품2count=부품2.length;
+        console.log(`부품2=${부품2.length}`);
+        
+        for(let i=1; i<=부품2count; i++){
+            search=부품2.indexOf(부품1[삭제1매개변수]);
+            console.log(`search=${search}`);
 
-    let search=부품2.indexOf(부품1[삭제1매개변수]);
-
+                if(search!=-1){
+                    부품2.splice(search,1);
+                    업체2.splice(search,1);
+                    개수2.splice(search,1);
+                    총가격2.splice(search,1);
+                }
+        }
+    //--------------
+ 
     부품1.splice(삭제1매개변수,1);
     업체1.splice(삭제1매개변수,1);
-    가격1.splice(삭제1매개변수,1);
-
-    if(search!=-1){
-        부품2.splice(search,1);
-        업체2.splice(search,1);
-        개수2.splice(search,1);
-        총가격2.splice(search,1);
-    }
+    가격1.splice(삭제1매개변수,1);   
 
     출력1();
     출력2();
@@ -121,13 +129,17 @@ function 등록2(){console.log('등록2함수실행')
     const 개수=document.querySelector('#개수').value;
 
     const 부품s=document.querySelector('#부품s').value;
-    console.log( 부품s )
+    console.log( 부품s );
 
-    const 업체인덱스 = 부품1.indexOf(부품s)
+    const 업체인덱스 = 부품1.indexOf(부품s);
+
+    let 물품당합계=가격1[업체인덱스]*개수;//231215.18:23 추가
+
 
     부품2.push( 부품s );
-    개수2.push(개수); console.log(개수2)
-    업체2.push( 업체1[업체인덱스] )
+    개수2.push(개수); console.log(개수2);
+    업체2.push( 업체1[업체인덱스] );
+    총가격2.push(물품당합계);//231215.18:23 추가
     출력2();
 }
 
@@ -137,12 +149,12 @@ function 출력2(){console.log('출력2함수실행')
     let html='';
 // 업체2
 
-let 부품당총가격=0;
+/* let 부품당총가격=0;  //231215.18:23 수정
     for(let i=0; i<가격1.length; i++){
         부품당총가격=가격1[i]*개수2[i]
         총가격2.push(부품당총가격);
         console.log(총가격2);
-    }
+    } */
     for(let i=0; i<업체2.length; i++){
         html+=`
         <div class="출력2row">

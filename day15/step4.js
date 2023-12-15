@@ -10,6 +10,7 @@ function 등록함수(){
     const infoDate=document.querySelector('#infoDate').value;
     const infoList=document.querySelector('#infoList').value;
     const infoAmount=document.querySelector('#infoAmount').value;
+    console.log(`date=${infoDate}`);
 
     날짜목록.push(infoDate);
     항목목록.push(infoList);
