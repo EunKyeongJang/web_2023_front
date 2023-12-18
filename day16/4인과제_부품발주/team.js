@@ -88,6 +88,17 @@ function 삭제1(삭제1매개변수){    //삭제1 함수 start
     업체1.splice(삭제1매개변수,1);
     가격1.splice(삭제1매개변수,1);   
 
+    //=======================================================
+
+    const option = document.querySelector('#부품s');
+    let html=''
+    for(let i=0 ;i<부품1.length;i++){
+        html+= `<option>${부품1[i]}</option>`
+    }
+    option.innerHTML = html;
+//=======================================================        
+
+
     출력1();
     출력2();
 }   //f end
