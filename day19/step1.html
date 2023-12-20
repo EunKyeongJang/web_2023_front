@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+    
+</head>
+<body>
+    
+    <div id="wrap"><!-- 전체구역 -->
+        <div id="header">
+            <img src="img/img1.png"/>
+            <ul>
+               
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox"> <!--js 가 들어갈 구역 -->
+               
+            </div>
+
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                        <div>카트 <span id="count">0</span></div>
+                        <div>총 주문금액 <span id="totl">원</span></div>
+                    </div>
+
+                    <div id="cartBottom">                       
+                        
+                    </div>
+                </div>
+
+                <div id="cartBtns">
+                    <input type="button" value="취소하기"> 
+                    <input type="button" value="주문하기"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============관리자메뉴=============== -->
+    <div>
+        <h3>관리자 메뉴</h3>
+
+        <!-- 카테고리 등록 -->
+        <div> 
+            <h3>카테고리 등록</h3>
+            <input id="inputCnum" type="text" placeholder="추가할 카테고리의 고유번호를 입력하십시오."/>             
+            <input id="inputCname" type="text" placeholder="추가할 카테고리 명을 입력하십시오."/>             
+            <input onclick="CategoryUpload()" type="button" value="등록">
+        </div>
+        <!-- 카테고리 등록 end -->
+
+        <!-- 제품등록 -->
+        <div>
+            <h3>제품등록</h3>
+
+            <!-- 등록할 제품의 카테고리 선택 -->
+            <select id="selectCategory">
+                <option>신제품(new)</option>
+                <option>프리미엄</option>
+                <option>와퍼&주니어</option>
+            </select>
+            <!-- 등록할 제품의 카테고리 선택 end -->
+            
+            <!-- 제품 입력 및등록 -->
+            <input id="inputPname" type="text" placeholder="추가할 제품 명을 입력하십시오."/>             
+            <input id="inputPrice" type="text" placeholder="추가할 제품 명을 입력하십시오."/>
+            <input id="inputPimg" type="file">
+            <input onclick="inputProduct()" type="button" value="등록">
+            <!-- 제품 입력 및등록 end -->
+
+        </div>
+        <!-- 제품등록 end -->
+
+        <!-- 결제내역 -->
+        <div>
+            <h3>결제내역</h3>
+
+            <!-- 결제내역 테이블 -->
+            <table>
+
+                <tr>
+                    <th>주문번호</th>
+                    <th>주문날짜</th>
+                    <th>주문상태</th>
+                    <th>제품명</th>
+                </tr>
+
+                <!-- 주문 1개 -->
+                <div id="orderList">
+                    <tr>
+                        <td>1</td>
+                        <td>2023-12-20</td>
+                        <td>주문완료</td>
+                        <td>버거1</td>
+                    </tr>
+                </div>
+                <!-- 주문 1개 end -->
+
+            </table>
+            <!-- 결제내역 테이블 end -->
+        </div>
+        <!-- 결제내역 end -->
+    </div>
+    <!-- ==============관리자메뉴 end=============== -->
+
+    <script src='step1.js'></script>
+</body>
+</html>
