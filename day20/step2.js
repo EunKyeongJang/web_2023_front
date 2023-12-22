@@ -1,5 +1,5 @@
 //p.267
-//1. toFixed(소수점) : 해당 소수점까지 출력 [ 반올림 ]
+//1. .toFixed(소수점) : 해당 소수점까지 출력 [ 반올림 ]
 //**math함수도 있음
 const l = 123.456789;
 console.log(l.toFixed(2));  //123.46
@@ -11,7 +11,7 @@ console.log(m);                 //m : NaN
 console.log(m==NaN);           //false  //NaN 비교x
 console.log(Number.isNaN(m));   //true  isNaN() 함수 이용한 비교o
 
-//3. isFinite(연산) : 유효성검사 : 연산의 결과가 무한대이면
+//3. .isFinite(연산) : 유효성검사 : 연산의 결과가 무한대이면
 const n=10/0;
 console.log(n);
 const o=-10/0;
@@ -26,7 +26,7 @@ console.log(`            `.trim().length);
 //크롤링 한 경우에 데이터의 공백을 삭제
 //의미없는 공백도 메모리를 사용하기 때문에 사용
 
-//2. split
+//2. .split
 const timeList = "12:30\n15:21";
     console.log(timeList);
 const timeArray=timeList.split('\n');
@@ -47,7 +47,7 @@ const hour=time.split(':');
     //sessionStorage    : 브라우저[ 크롬, 엣지 ]에 저장, 탭 꺼지면 메모리도 사라짐, 같은 탭에서 공유
 
 //예1)
-//localStorage.setItem(키, 값);
+//localStorage.setItem(키, 값); **함수는 교환 할 수 없음(함수는 데이터가 아니라 기능이기 때문). 브라우저 localStorage 에 접근할 수 있는 객체
 localStorage.setItem('이름','유재석');  //'이름'이라는 키로 '유재석' 값을 저장
 console.log(localStorage.getItem('이름'));
 

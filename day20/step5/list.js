@@ -12,7 +12,7 @@ if(boardArray==null){
 }
 else{
     for(let i=0; i<boardArray.length; i++){
-        html+=`<tr onclick=""><td>${i}</td>   <td>${boardArray[i].제목}</td>   <td>${boardArray[i].작성자}</td>  <td>${boardArray[i].조회수}</td></tr>`;
+        html+=`<tr onclick=" location.href="" "><td>${i}</td>   <td>${boardArray[i].제목}</td>   <td>${boardArray[i].작성자}</td>  <td>${boardArray[i].조회수}</td></tr>`;
     }
 console.log(html);
 }
