@@ -171,7 +171,7 @@ function printCart(){
 
 
 
-
+//==========과제==========================================================
 //함수6 카테고리 업로드
 function CategoryUpload(){//CategoryUpload 함수 실행
     console.log('CategoryUpload() 실행');
@@ -204,19 +204,21 @@ function inputProduct(){//inputProduct 함수 실행
     let selectCategory=document.querySelector("#selectCategory").value;
     let inputPname=document.querySelector("#inputPname").value;
     let inputPimg=document.querySelector("#inputPimg").value;
+    let selectCno=document.querySelector("#selectCno");
 
-    //제품 배열에 push//231220_하다말음 : select로 입력받은 값에 매칭되는 cno을 자동으로 추출해서 push에 넣어야됨
-    let newCno=0;    
+    //카테고리 등록 -> 번호 자동 추출       
+    let newCno=0;
 
     console.log('selectCategory'+selectCategory);
     for(let i=0; i<categoryArray.length; i++){
         if(selectCategory==categoryArray[i].cname){
-
+            newCno=categoryArray[i].cno;
+            console.log(newCno);
         }
     }
 
-    
-
+    selectCno.innerHTML=newCno;
+    //카테고리 등록 end
 
 }//f end
 
@@ -235,3 +237,5 @@ function addCategory(){
 
     selectCategory.innerHTML=html;
 }//f end
+
+//==========과제end==========================================================
