@@ -49,8 +49,8 @@
         <!-- 카테고리 등록 -->
         <div> 
             <h3>카테고리 등록</h3>
-            <input id="inputCnum" type="text" placeholder="추가할 카테고리의 고유번호를 입력하십시오."/>             
-            <input id="inputCname" type="text" placeholder="추가할 카테고리 명을 입력하십시오."/>             
+            <input id="inputCnum" type="text" placeholder="카테고리 고유번호"/>             
+            <input id="inputCname" type="text" placeholder="카테고리 명"/>             
             <input onclick="CategoryUpload()" type="button" value="등록">
         </div>
         <!-- 카테고리 등록 end -->
@@ -60,20 +60,21 @@
             <h3>제품등록</h3>
 
             <!-- 등록할 제품의 카테고리 선택 -->
-            <select onclick="printCno()" id="selectCategory">
+            <select onclick="printCno('selectCategory', 'selectCno')" id="selectCategory">
+                <option value="" selected disabled hidden>카테고리 선택</option>
                 <option>신제품(new)</option>
                 <option>프리미엄</option>
                 <option>와퍼&주니어</option>
             </select>
 
-            <input id="selectCno" type="text" readonly>
+            <input id="selectCno" type="text" placeholder="카테고리 고유번호" readonly>
             <!-- 카테고리 번호 :<span id="selectCno">   </span> -->
             <!-- 등록할 제품의 카테고리 선택 end -->
             
             <!-- 제품 입력 및등록 -->
-            <input id="inputPname" type="text" placeholder="추가할 제품 명을 입력하십시오."/>
-            <input id="inputPno" type="text" placeholder="추가할 제품의 고유번호을 입력하십시오."/>             
-            <input id="inputPrice" type="text" placeholder="제품 가격을 입력하십시오."/>
+            <input id="inputPname" type="text" placeholder="제품 명"/>
+            <input id="inputPno" type="text" placeholder="제품 고유번호"/>             
+            <input id="inputPrice" type="text" placeholder="제품 가격"/>
             <input id="inputPimg" type="file">
             <input onclick="inputProduct()" type="button" value="등록">
             <!-- 제품 입력 및등록 end -->
@@ -83,28 +84,53 @@
 
         <!-- 결제내역 -->
         <div>
-            <h3>결제내역</h3>
+            <h3>제품리스트</h3>
 
             <!-- 결제내역 테이블 -->
-            <table>
+            <select onclick="printCno('listCategory', 'listCno')" id="listCategory">
+                <option value="" selected disabled hidden>카테고리 선택</option>
+                <option>신제품(new)</option>
+                <option>프리미엄</option>
+                <option>와퍼&주니어</option>
+            </select>
 
-                <tr>
-                    <th>주문번호</th>
-                    <th>주문날짜</th>
-                    <th>주문상태</th>
+            <input id="listCno" type="text" placeholder="카테고리 고유번호" readonly />
+
+            <input onclick="printPlist()" type="button" value="검색" />
+            <table>
+                <tr>                    
+                    <th>제품 고유번호</th>
                     <th>제품명</th>
+                    <th>제품가격</th>
+                    <th>제품이미지</th>
                 </tr>
 
-                <!-- 주문 1개 -->
-                <div id="orderList">
+                <!-- 제품 리스트-->
+                <tbody id="plist">
+                    <!-- 제품 1개 -->
                     <tr>
                         <td>1</td>
-                        <td>2023-12-20</td>
-                        <td>주문완료</td>
-                        <td>버거1</td>
+                        <td>버거</td>
+                        <td>13,000</td>
+                        <td>img</td>
+                        <td><input onclick="" type="button" value="수정"></td>
+                        <td><input onclick="" type="button" value="삭제"></td>
                     </tr>
-                </div>
-                <!-- 주문 1개 end -->
+                    <!-- 제품 1개 end -->
+
+                    <!-- 제품 1개 -->
+                    <tr>
+                        <td>1</td>
+                        <td>버거</td>
+                        <td>13,000</td>
+                        <td>img</td>
+                        <td><input onclick="" type="button" value="수정"></td>
+                        <td><input onclick="" type="button" value="삭제"></td>
+                    </tr>
+                    <!-- 제품 1개 end -->
+                </tbody>
+                <!-- 제품 리스트 end -->
+                
 
             </table>
             <!-- 결제내역 테이블 end -->

@@ -77,6 +77,7 @@ function printCategory(selectCno){//함수 printCategory 선언  //매개변수 
     //4. 제품출력
     printProduct(selectCno);    //카테고리에서 선택된 카테고리번호를 제품출력에 매개변수로 전달
     //제품 출력 시 모든제품 출력이 아니고 선택된 카테고리번호와 일치하는 제품만 출력되어야함
+    console.log(categoryArray.cno);
 }//f end
 
 //함수2 제품 출력하는 함수 (실행조건 : 카테고리 출력되었을때)
@@ -134,7 +135,6 @@ function cartDelete(deleteIndex){   //cartDelete() start
 
 //함수5 카트의 현재상태를 출력하는 함수(실행조건 : 1. 제품을 선택했을때  2. 제품을 삭제했을때)
 function printCart(){
-
     //1. 어디에
     const cartBottom=document.querySelector("#cartBottom");
 
@@ -173,7 +173,7 @@ function printCart(){
 
 //========================과제===========================
 
-//함수6 카테고리 업로드
+//함수6 카테고리 추가
 function CategoryUpload(){//CategoryUpload 함수 실행
     console.log('CategoryUpload() 실행');
     
@@ -201,13 +201,15 @@ function CategoryUpload(){//CategoryUpload 함수 실행
 
 //========================== 제품등록 ========================
 //**제품등록 > 카테고리 목록 추가
-addCategory();  //카테고리 출력함수 실행
-function addCategory(){//addCategory() 실행(카테고리 출력함수)
+addCategory('selectCategory');  //카테고리 출력함수 실행.
+
+//카테고리 출력함수
+function addCategory(outputId){//addCategory() 실행(카테고리 출력함수)
     console.log("addCategory() 실행")
 
-    let selectCategory=document.querySelector("#selectCategory");
+    let selectCategory=document.querySelector(`#${outputId}`);
 
-    let html=``;
+    let html=`<option value="" selected disabled hidden>카테고리 선택</option>`;
 
     for(let i=0; i<categoryArray.length; i++){
         html+=`<option>${categoryArray[i].cname}</option>`
@@ -217,22 +219,19 @@ function addCategory(){//addCategory() 실행(카테고리 출력함수)
 }//f end
 
 //카테고리 클릭 시 카테고리 번호 출력 함수
-function printCno(){//printCno() 실행
+function printCno(selectValue, outputId){//printCno() 실행
     console.log('printCno() 실행');
-    let selectCategory=document.querySelector("#selectCategory").value;
+    let selectCategory=document.querySelector(`#${selectValue}`).value;
 
-    let newCno=0;
-
-    console.log('selectCategory'+selectCategory);
+    console.log('selectCategory'+selectValue);
 
     for(let i=0; i<categoryArray.length; i++){
         if(selectCategory==categoryArray[i].cname){
-            newCno=categoryArray[i].cno;
-            console.log(newCno);
+            //선택된 카테고리명과 카테고리 배열.cname이 일치하면,
+            //카테고리 고유번호를 옆에 출력
+            document.querySelector(`#${outputId}`).value=categoryArray[i].cno;
         }
     }
-
-    document.querySelector("#selectCno").value=newCno;
 }//f end
 
 //제품 등록/출력 함수
@@ -261,11 +260,75 @@ function inputProduct(){//inputProduct 함수 실행
     })
     console.log(productArray);
 
+    //등록하면 ui에 바로 출력
     printCategory(selectCno);
+
+    //input value값 초기화
+    addCategory();
+    document.querySelector('#selectCno').value=``;
+    document.querySelector("#inputPname").value=``;
+    document.querySelector("#inputPimg").value=``;
+    document.querySelector("#inputPrice").value=``;
+    document.querySelector('#inputPno').value=``;
+    
     //제품 등록 end
 
 }//f end
 //============================= 제품등록 end =============================
 
+//주문목록 받아서 정보/상태 출력하기
+
 
 //==========과제end==========================================================
+
+//=====과제랑 다르게 제품목록 수정/ 삭제 기능====
+
+addCategory('listCategory');
+
+//제품리스트 출력
+function printPlist(){//제품리스트출력함수 실행
+    console.log('printPlist() 실행')
+    const plist=document.querySelector("#plist");
+    let listCno=document.querySelector('#listCno').value;
+    console.log(listCno);
+
+    let html=``;
+
+    for(let i=0; i<productArray.length; i++){
+        if(productArray[i].cno==listCno){
+            html+=`<!-- 제품 1개 -->
+                <tr>
+                    <td>${productArray[i].pno}</td>
+                    <td>${productArray[i].pname}</td>
+                    <td>${productArray[i].pprice}</td>
+                    <td>${productArray[i].pimg}</td>
+                    <td><input onclick="" type="button" value="수정"></td>
+                    <td><input onclick="deletePlist(${productArray[i].pno})" type="button" value="삭제"></td>
+                </tr>
+                <!-- 제품 1개 end -->`;
+        }
+    }
+
+    plist.innerHTML=html;
+}   //f end
+
+//제품 삭제 
+function deletePlist(deletePno){//제품 삭제 함수
+    console.log('deletePlist() 실행')
+    let lastCnum=0;
+    
+    for(let i=0; i<productArray.length; i++){
+        if(productArray[i].pno==deletePno){
+            lastCnum=productArray[i].cno;
+            productArray.splice(i,1);
+        }
+    }
+
+    //ui에서도 삭제
+    printCategory(lastCnum);
+    
+    //제품리스트 출력
+    printPlist();
+}//f end
+
+//===================end=======================
