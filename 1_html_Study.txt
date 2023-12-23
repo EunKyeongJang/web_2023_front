@@ -99,7 +99,7 @@ day02
         4. placeholder
             - 가이드 라인
 
-        5. redolny
+        5. readonly
             -수정불가[읽기모드]
 
         6. disabled

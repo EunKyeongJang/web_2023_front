@@ -60,17 +60,19 @@
             <h3>제품등록</h3>
 
             <!-- 등록할 제품의 카테고리 선택 -->
-            <select id="selectCategory">
+            <select onclick="printCno()" id="selectCategory">
                 <option>신제품(new)</option>
                 <option>프리미엄</option>
                 <option>와퍼&주니어</option>
             </select>
 
-            카테고리 번호 :<span id="selectCno">   </span>
+            <input id="selectCno" type="text" readonly>
+            <!-- 카테고리 번호 :<span id="selectCno">   </span> -->
             <!-- 등록할 제품의 카테고리 선택 end -->
             
             <!-- 제품 입력 및등록 -->
-            <input id="inputPname" type="text" placeholder="추가할 제품 명을 입력하십시오."/>             
+            <input id="inputPname" type="text" placeholder="추가할 제품 명을 입력하십시오."/>
+            <input id="inputPno" type="text" placeholder="추가할 제품의 고유번호을 입력하십시오."/>             
             <input id="inputPrice" type="text" placeholder="제품 가격을 입력하십시오."/>
             <input id="inputPimg" type="file">
             <input onclick="inputProduct()" type="button" value="등록">

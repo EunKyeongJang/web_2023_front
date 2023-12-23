@@ -171,7 +171,8 @@ function printCart(){
 
 
 
-//==========과제==========================================================
+//========================과제===========================
+
 //함수6 카테고리 업로드
 function CategoryUpload(){//CategoryUpload 함수 실행
     console.log('CategoryUpload() 실행');
@@ -194,37 +195,14 @@ function CategoryUpload(){//CategoryUpload 함수 실행
 
     document.querySelector("#inputCnum").value=``;
     document.querySelector("#inputCname").value=``;
+    
 }//f end
 
 
-//함수7 제품등록
-function inputProduct(){//inputProduct 함수 실행
-    console.log('inputProduct() 실행')
-
-    let selectCategory=document.querySelector("#selectCategory").value;
-    let inputPname=document.querySelector("#inputPname").value;
-    let inputPimg=document.querySelector("#inputPimg").value;
-    let selectCno=document.querySelector("#selectCno");
-
-    //카테고리 등록 -> 번호 자동 추출       
-    let newCno=0;
-
-    console.log('selectCategory'+selectCategory);
-    for(let i=0; i<categoryArray.length; i++){
-        if(selectCategory==categoryArray[i].cname){
-            newCno=categoryArray[i].cno;
-            console.log(newCno);
-        }
-    }
-
-    selectCno.innerHTML=newCno;
-    //카테고리 등록 end
-
-}//f end
-
-addCategory();
+//========================== 제품등록 ========================
 //**제품등록 > 카테고리 목록 추가
-function addCategory(){
+addCategory();  //카테고리 출력함수 실행
+function addCategory(){//addCategory() 실행(카테고리 출력함수)
     console.log("addCategory() 실행")
 
     let selectCategory=document.querySelector("#selectCategory");
@@ -237,5 +215,57 @@ function addCategory(){
 
     selectCategory.innerHTML=html;
 }//f end
+
+//카테고리 클릭 시 카테고리 번호 출력 함수
+function printCno(){//printCno() 실행
+    console.log('printCno() 실행');
+    let selectCategory=document.querySelector("#selectCategory").value;
+
+    let newCno=0;
+
+    console.log('selectCategory'+selectCategory);
+
+    for(let i=0; i<categoryArray.length; i++){
+        if(selectCategory==categoryArray[i].cname){
+            newCno=categoryArray[i].cno;
+            console.log(newCno);
+        }
+    }
+
+    document.querySelector("#selectCno").value=newCno;
+}//f end
+
+//제품 등록/출력 함수
+function inputProduct(){//inputProduct 함수 실행
+    console.log('inputProduct() 실행')
+
+    let selectCno=document.querySelector("#selectCno").value;
+    let inputPname=document.querySelector("#inputPname").value;
+    let inputPimg=document.querySelector("#inputPimg").value;
+    let inputPrice=document.querySelector("#inputPrice").value;
+    let inputPno=document.querySelector('#inputPno').value;
+    
+
+    //이미지 경로 가공(절대경로 : 오류발생, 상대경로로 바꾸기)
+    let newImg=inputPimg.split('\\')[2];
+    console.log(inputPimg.split('\\')[2]);
+
+
+    //제품 등록
+    productArray.push({
+        pno : inputPno, 
+        pname : inputPname, 
+        pprice :inputPrice, 
+        pimg : newImg, 
+        cno :  selectCno
+    })
+    console.log(productArray);
+
+    printCategory(selectCno);
+    //제품 등록 end
+
+}//f end
+//============================= 제품등록 end =============================
+
 
 //==========과제end==========================================================
