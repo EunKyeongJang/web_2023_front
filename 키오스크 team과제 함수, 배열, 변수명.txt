@@ -1,0 +1,74 @@
+<  html >
+id명 : 
+-카테고리 등록
+inputCno		//카테고리 넘버
+inputCname	//카테고리 이름
+	
+-제품등록
+selectCategory	//카테고리 선택
+selectCno	//카테고리 넘버 출력
+inputPname	//제품이름
+inputPno		//제품넘버
+inputPprice	//제품가격
+inputPimg	//제품이미지
+
+-제품리스트 출력
+listCategory	//카테고리 선택
+listCno		//카테고리 넘버 출력
+listProduct	//제품 리스트 출력
+
+-제품수정
+changePname	//수정할 제품이름
+changePprice	//수정할 제품가격
+changePimg	//수정할 제품이미지
+        
+<js>
+- 카테고리 등록
+categoryUpload ()			//카테고리 등록 함수(매개변수 : 출력할 박스Id)
+	const inputCno		//카테고리 넘버.value
+	const inputCname		//카테고리 이름.value
+	let category= { cno : , 	//카테고리 객체
+		        cname : }
+	let categoryArray		//카테고리 배열
+
+- 카테고리 목록 출력
+addCategory( outputId )		//카테고리 목록 출력 함수
+	const selectCategory	//카테고리를 추가할 select 박스 선택
+	let html			//html구문 저장할 변수
+	
+- select에서 선택한 카테고리 번호 자동 출력
+printCno( selectValue, outputId )	//매개변수 : select박스 Id, 출력할 박스Id
+	const selectCategory	//카테고리select.value
+	
+- 제품 등록
+productUpload()			//제품등록 함수
+	const selectCno		//select에서 선택된 cno
+	const inputPname		//제품이름.value
+	const inputPno		//제품넘버.value
+	const inputPprice		//제품가격.value
+	const inputPimg		//제품이미지.value
+
+	let newImg		//제품 이미지 URL 가공(절대경로 > 상대경로)
+	
+	let product = { pno: , 	//제품 객체
+		        pname : ,
+		        pprice : ,
+		        pimg : ,
+		        cno : }
+	let productArray		//제품 배열	
+
+- 제품 리스트 출력
+printPlist()			//등록된 제품 리스트 출력
+	cosnt listProduct		//제품리스트를 출력할 박스 선택
+	const listCno		//선택된 카테고리넘버.value
+	let html 			//html구문 저장할 변수
+
+- 제품 삭제
+deletePlist( deletePno )		//제품삭제함수(매개변수 : 삭제할 제품넘버)
+	let lastCno		//삭제한 제품의 카테고리넘버 저장
+
+- 제품수정
+changePinfo( changePno )		//제품수정함수( 매개변수 : 수정할 제품넘버 )
+	const changePname	//수정할 제품명.value
+	const changePprice	//수정할 제품가격.value
+	const changePimg		//수정할 제품이미지.value
