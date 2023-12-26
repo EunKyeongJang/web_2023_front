@@ -27,7 +27,7 @@ changePimg	//수정할 제품이미지
 categoryUpload ()			//카테고리 등록 함수(매개변수 : 출력할 박스Id)
 	const inputCno		//카테고리 넘버.value
 	const inputCname		//카테고리 이름.value
-	let category= { cno : , 	//카테고리 객체
+	let category= { cno : , 	//카테고리 객체*
 		        cname : }
 	let categoryArray		//카테고리 배열
 
@@ -50,12 +50,12 @@ productUpload()			//제품등록 함수
 
 	let newImg		//제품 이미지 URL 가공(절대경로 > 상대경로)
 	
-	let product = { pno: , 	//제품 객체
+	let product = { pno: , 	//제품 객체 *
 		        pname : ,
 		        pprice : ,
 		        pimg : ,
 		        cno : }
-	let productArray		//제품 배열	
+	let productArray		//제품 배열	*
 
 - 제품 리스트 출력
 printPlist()			//등록된 제품 리스트 출력
