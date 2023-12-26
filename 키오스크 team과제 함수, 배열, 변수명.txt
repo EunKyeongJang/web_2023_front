@@ -50,12 +50,12 @@ productUpload()			//제품등록 함수
 
 	let newImg		//제품 이미지 URL 가공(절대경로 > 상대경로)
 	
-	let product = { pno: , 	//제품 객체 *
-		        pname : ,
-		        pprice : ,
-		        pimg : ,
-		        cno : }
-	let productArray		//제품 배열	*
+	let product = { pno: , 	//제품 객체 *★
+		        pname : ,★
+		        pprice : ,★
+		        pimg : ,★
+		        cno : }★
+	let productArray		//제품 배열	*★
 
 - 제품 리스트 출력
 printPlist()			//등록된 제품 리스트 출력
@@ -72,3 +72,4 @@ changePinfo( changePno )		//제품수정함수( 매개변수 : 수정할 제품�
 	const changePname	//수정할 제품명.value
 	const changePprice	//수정할 제품가격.value
 	const changePimg		//수정할 제품이미지.value
+
