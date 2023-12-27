@@ -13,7 +13,7 @@ DOM : 문서 객체 모델
             4. .textContent         : 문자열을 그대로
             5. .value               : 입력받은 value 속성 값 호출
             6. .style               : style속성 호출
-                .style.caa속성명='값' : !!속성명은 카멜표기법
+                .style.caa속성명='값' : !!속성명trim은 카멜표기법
                     1. .style.height
                     2. .style.backgroungColor
                     3. .style.color
