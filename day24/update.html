@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/coomon.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/write.css'>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>    <!-- 최신 jquery -->
+    <script src='js/common.js'></script>
+    <script src='js/update.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="main">
+            <br/>
+            <textarea ></textarea>
+            <input onchange="이미지등록함수(event)" type="file" accept="imge/*"/>
+            <img id="fileImg"/> <br />
+            <button onclick="피드수정()" type="button">피드게시</button>
+        </div>
+    </div>
+</body>
+</html>
